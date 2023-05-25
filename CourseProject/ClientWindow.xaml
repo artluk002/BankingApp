@@ -60,6 +60,6 @@
         <Button x:Name="ChangeMailBtn" Content="{x:Static Properties:Resources.changemailaddress}" Style="{StaticResource BtnLocalization_Style}" Canvas.Left="443" Canvas.Top="232" Click="ChangeMailBtn_Click" Width="214" Height="31" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Button x:Name="ChangePasswordBtn" Content="{x:Static Properties:Resources.changepassword}" Style="{StaticResource BtnLocalization_Style}" Canvas.Left="443" Canvas.Top="272" Click="ChangePasswordBtn_Click" Width="214" Height="32" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Rectangle Height="3" Canvas.Left="400" Fill="DarkGray" Stroke="DarkGray" Canvas.Top="314" Width="319" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button x:Name="SignOutBtn" Content="{x:Static Properties:Resources.signout}" Style="{StaticResource BtnLocalization_Style}" Canvas.Left="443" Canvas.Top="352" Click="SignOutBtn_Click" Width="214" Height="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button x:Name="SignOutBtn" Content="{x:Static Properties:Resources.signout}" Style="{StaticResource BtnLocalization_Style}" Canvas.Left="443" Canvas.Top="352" Click="SignOutBtn_Click" Width="214" Height="32" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Canvas>
 </Window>
