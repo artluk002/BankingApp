@@ -1,0 +1,62 @@
+﻿<Window x:Class="CourseProject.GeneralWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseProject"
+        mc:Ignorable="d"
+        xmlns:language="clr-namespace:CourseProject.Properties"
+        Title="GeneralWindow" Height="604" Width="800" ResizeMode="NoResize" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="5" UseAeroCaptionButtons="False" />
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Canvas Style="{StaticResource BG_Style}">
+        <Button x:Name="CloseBtn" Content="X" Height="20  " Width="20" Canvas.Left="780" Background="Transparent" Foreground="Beige" HorizontalAlignment="Center" VerticalAlignment="Center" Click="CloseBtn_Click"/>
+        <Button x:Name="ClientBtn" Height="40" Width="40" Background="Transparent" BorderThickness="0">
+            <Button.Content>
+                <Image Source="\Images\client.png"/>
+            </Button.Content>
+        </Button>
+        <Button Canvas.Left="40" x:Name="TransactionsHistoryBtn" Height="40" Width="40" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button.Content>
+                <Image Source="\Images\trans_history.png"/>
+            </Button.Content>
+        </Button>
+        <Label Content="{x:Static language:Resources.cards}" Style="{StaticResource Label_Style}" Canvas.Left="206" Canvas.Top="9" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <ComboBox x:Name="cardsCB" Width="220" Canvas.Left="272" Canvas.Top="14" Foreground="Black" DropDownClosed="cardsCB_DropDownClosed"/>
+        <Button Content="{x:Static language:Resources.add}" Style="{StaticResource BtnAdd_Style}" Canvas.Left="497" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click" />
+        <Image x:Name="MasterCardBackground" Visibility="Hidden" Source="\Images\BankingCardMasterCard.png" Width="400" Canvas.Left="200" Canvas.Top="46" />
+        <Image x:Name="VisaBackground" Source="\Images\BankingCardVisa.png" Width="400" Canvas.Left="200" Canvas.Top="46" />
+        <Label x:Name="lable_expirity_date" Visibility="Hidden" Content="{x:Static language:Resources.expirydate}" FontSize="17" Style="{StaticResource Label_Style}" Canvas.Left="206" Canvas.Top="262" />
+        <Label x:Name="lable_card_date" Content="" FontSize="17" Style="{StaticResource Label_Style}" Canvas.Left="322" Canvas.Top="262" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Label x:Name="lable_cvv_code" Visibility="Hidden" Content="CVV:" FontSize="17" Style="{StaticResource Label_Style}" Canvas.Left="375" Canvas.Top="262"/>
+        <Label x:Name="lable_card_number" Content="" Style="{StaticResource Label_Style}" FontWeight="Bold" FontSize="25" Canvas.Left="220" Canvas.Top="163" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lable_card_name_surname" Content="" Style="{StaticResource Label_Style}" Canvas.Left="220" Canvas.Top="192" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Label x:Name="lable_card_cvv" MouseDoubleClick="lable_card_cvv_MouseDoubleClick" FontSize="17" Style="{StaticResource Label_Style}" Canvas.Left="424" Canvas.Top="262" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        <GroupBox Height="97" Width="236" VerticalContentAlignment="Bottom" Canvas.Left="20" Canvas.Top="335" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0,0.5" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5D5A5A"/>
+                    <GradientStop Color="#FF484343" Offset="1"/>
+                    <GradientStop Color="#FF585050" Offset="0.489"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+            <TextBox x:Name="ToCardNumberTB" HorizontalAlignment="Left" TextWrapping="Wrap" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Bottom" FontSize="17" Foreground="Beige" Text="" Width="194" Height="26" PreviewTextInput="ToCardNumber_PreviewTextInput"/>
+        </GroupBox>
+        <Image Source="\Images\FromCardToCard.png" Height="30" Width="46" Canvas.Left="26" Canvas.Top="338" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle Height="2" Canvas.Left="26" Stroke="DarkGray" Canvas.Top="395" Width="194" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="{x:Static language:Resources.transfertothecard}" Style="{StaticResource Label_Style}" Canvas.Left="72" Canvas.Top="337" FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button x:Name="TransferToCard" Content=">" Canvas.Left="225" Canvas.Top="366" Background="Transparent" Foreground="Beige" FontSize="17" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="25" Height="27" HorizontalAlignment="Center" VerticalAlignment="Top" BorderThickness="0" Click="TransferToCard_Click"/>
+        <Label x:Name="lable_currency_code" Visibility="Hidden" Content="USD" Style="{StaticResource Label_Style}" Canvas.Left="220" Canvas.Top="224" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Label x:Name="lable_balance" Visibility="Hidden" Content="0,0" Style="{StaticResource Label_Style}" Canvas.Left="273" Canvas.Top="224" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
+</Window>
+    

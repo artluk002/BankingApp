@@ -1,0 +1,49 @@
+﻿<Window x:Class="CourseProject.RecoveryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseProject"
+        mc:Ignorable="d"
+        xmlns:language="clr-namespace:CourseProject.Properties"
+        WindowStartupLocation="CenterScreen"
+        Title="RecoveryWindow" Height="450" Width="400" ResizeMode="NoResize">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="5" UseAeroCaptionButtons="False" />
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Canvas x:Name="MainCanvas" Style="{StaticResource BG_Style}">
+
+        <Canvas x:Name="Step1Canvas" Width="400" Height="120" Margin="0, 20, 0, 0">
+            <TextBox x:Name="MailTextBox" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="46" Width="250" Canvas.Left="104" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button x:Name="ConfirmBtn1" Content="{x:Static language:Resources.confirm}" Style="{StaticResource BtnConfirm_Style}" Canvas.Left="155" Canvas.Top="75" HorizontalAlignment="Center" VerticalAlignment="Top" Click="ConfirmBtn1_Click"/>
+            <Label x:Name="MailLable" Content="{x:Static language:Resources.maillable}" Style="{StaticResource Label_Style}" Canvas.Left="10" Canvas.Top="38" HorizontalAlignment="Left" VerticalAlignment="Center" Width="94" />
+        </Canvas>
+        <Canvas x:Name="Step2Canvas" Width="400" Height="90" Margin="0, 140, 0, 0" Visibility="Hidden">
+            <TextBox x:Name="AccessCodeTextBox" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="12" Width="250" Canvas.Left="102" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button x:Name="ConfirmBtn2" Content="{x:Static language:Resources.confirm}" Style="{StaticResource BtnConfirm_Style}" Canvas.Left="153" Canvas.Top="41" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ConfirmBtn2_Click"/>
+            <Label x:Name="AccessCodeLable" Content="{x:Static language:Resources.code}" Style="{StaticResource Label_Style}" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="92" />
+        </Canvas>
+        <Canvas x:Name="Step3Canvas" Width="400" Height="150" Margin="0, 230, 0, 0" Visibility="Hidden">
+            <Label x:Name="UserLoginLable" Content="User Login" Style="{StaticResource Label_Style}" Canvas.Left="152" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <PasswordBox x:Name="PasswordTextBox" Style="{StaticResource PB_Style}" Width="250" Height="24" FontSize="14" VerticalContentAlignment="Center" Canvas.Left="113" Canvas.Top="48" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label x:Name="PasswordLable" Content="{x:Static language:Resources.password}" Style="{StaticResource Label_Style}" Canvas.Top="40" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="10" Width="103"/>
+            <Label x:Name="RepitPasswordLable" Content="{x:Static language:Resources.repitlable}" Style="{StaticResource Label_Style}" Canvas.Left="10" Canvas.Top="68" HorizontalAlignment="Left" VerticalAlignment="Center" Width="102"/>
+            <PasswordBox x:Name="RepitPasswordTextBox" Style="{StaticResource PB_Style}" Width="250" Height="24" FontSize="14" VerticalContentAlignment="Center" Canvas.Left="113" Canvas.Top="76" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button x:Name="ConfirmBtn3" Content="{x:Static language:Resources.confirm}" Style="{StaticResource BtnConfirm_Style}" Canvas.Left="155" Canvas.Top="105" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ConfirmBtn3_Click"/>
+
+        </Canvas>
+        <Label x:Name="RecoveryLable" Content="{x:Static language:Resources.recovery}" Style="{StaticResource Label_Style}" FontSize="25" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Center" Canvas.Top="20" Width="400" />
+        <Menu Height="20" Width="400" Background="Transparent" HorizontalContentAlignment="Right">
+            <MenuItem Header="_Ru" Foreground="Beige" Height="20" Width="25" Click="MenuItem_Click_2"/>
+            <MenuItem Header="_En" Foreground="Beige" Height="20" Width="25" Click="MenuItem_Click_1"/>
+            <MenuItem x:Name="CloseBtn" Header="_X" Foreground="Beige" Height="20" Width="20" HorizontalAlignment="Right" Margin="330,0,0,0" Click="MenuItem_Click"/>
+        </Menu>
+    </Canvas>
+</Window>
