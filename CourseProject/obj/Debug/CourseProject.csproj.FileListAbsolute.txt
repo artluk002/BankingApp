@@ -62,3 +62,5 @@ C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\TransferToCardWindow.g.cs
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\TransferToCardWindow.baml
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\AccessWindow.g.cs
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\AccessWindow.baml
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ClientWindow.g.cs
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ClientWindow.baml

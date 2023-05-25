@@ -24,7 +24,7 @@
                 <Image Source="\Images\client.png"/>
             </Button.Content>
         </Button>
-        <Button Canvas.Left="40" x:Name="TransactionsHistoryBtn" Height="40" Width="40" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Canvas.Left="40" x:Name="TransactionsHistoryBtn" Height="40" Width="40" Background="Transparent" BorderThickness="0" Click="TransactionsHistoryBtn_Click" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button.Content>
                 <Image Source="\Images\trans_history.png"/>
             </Button.Content>

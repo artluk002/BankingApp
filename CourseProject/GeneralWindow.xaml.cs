@@ -195,5 +195,12 @@ namespace CourseProject
             TransferToCardWindow TTCW = new TransferToCardWindow(this);
             TTCW.ShowDialog();
         }
+
+        private void TransactionsHistoryBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ClientWindow CW = new ClientWindow(this);
+            this.Hide();
+            CW.Show();
+        }
     }
 }

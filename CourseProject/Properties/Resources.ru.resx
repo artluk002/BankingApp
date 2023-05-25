@@ -132,6 +132,15 @@
   <data name="cardtypelable" xml:space="preserve">
     <value>Тип карты: </value>
   </data>
+  <data name="changemailaddress" xml:space="preserve">
+    <value>Изменить эл. почту</value>
+  </data>
+  <data name="changepassword" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="changephonenumber" xml:space="preserve">
+    <value>Изменить номер телефона</value>
+  </data>
   <data name="code" xml:space="preserve">
     <value>Код:</value>
   </data>
@@ -156,6 +165,9 @@
   <data name="drlop" xml:space="preserve">
     <value>Не помню логин или пароль</value>
   </data>
+  <data name="english" xml:space="preserve">
+    <value>Английский</value>
+  </data>
   <data name="expirydate" xml:space="preserve">
     <value>Срок действия:</value>
   </data>
@@ -165,8 +177,14 @@
   <data name="fromcardlable" xml:space="preserve">
     <value>С карты</value>
   </data>
+  <data name="fullname" xml:space="preserve">
+    <value>ФИО:</value>
+  </data>
   <data name="genderlable" xml:space="preserve">
     <value>Пол:</value>
+  </data>
+  <data name="languages" xml:space="preserve">
+    <value>Языки</value>
   </data>
   <data name="loginbutton" xml:space="preserve">
     <value>Войти</value>
@@ -189,6 +207,12 @@
   <data name="paymentsystemlable" xml:space="preserve">
     <value>Платёжная система:</value>
   </data>
+  <data name="personaldata" xml:space="preserve">
+    <value>Личные данные</value>
+  </data>
+  <data name="personaldatachanges" xml:space="preserve">
+    <value>Изменения личных данных</value>
+  </data>
   <data name="phonelable" xml:space="preserve">
     <value>Телефон:</value>
   </data>
@@ -206,6 +230,15 @@
   </data>
   <data name="repitlable" xml:space="preserve">
     <value>Повтори:</value>
+  </data>
+  <data name="russion" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="signout" xml:space="preserve">
+    <value>Выйти из аккаунта</value>
   </data>
   <data name="sum" xml:space="preserve">
     <value>Сумма</value>

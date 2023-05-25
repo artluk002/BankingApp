@@ -118,6 +118,9 @@
     <Compile Include="Classes\DB.cs" />
     <Compile Include="Classes\MailMessageBuilder.cs" />
     <Compile Include="Classes\RegistrationHelper.cs" />
+    <Compile Include="ClientWindow.xaml.cs">
+      <DependentUpon>ClientWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GeneralWindow.xaml.cs">
       <DependentUpon>GeneralWindow.xaml</DependentUpon>
     </Compile>
@@ -139,6 +142,10 @@
       <DependentUpon>TransferToCardWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AccessWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ClientWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -217,6 +224,18 @@
     <Resource Include="Images\close.png" />
     <Resource Include="Images\FromCardToCard.png" />
     <Resource Include="Images\trans_history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\client_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

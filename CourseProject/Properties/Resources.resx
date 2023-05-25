@@ -132,6 +132,15 @@
   <data name="cardtypelable" xml:space="preserve">
     <value>Card type:</value>
   </data>
+  <data name="changemailaddress" xml:space="preserve">
+    <value>Change mail address</value>
+  </data>
+  <data name="changepassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="changephonenumber" xml:space="preserve">
+    <value>Change phone number</value>
+  </data>
   <data name="code" xml:space="preserve">
     <value>Code:</value>
   </data>
@@ -156,6 +165,9 @@
   <data name="drlop" xml:space="preserve">
     <value>Don't remember login or password</value>
   </data>
+  <data name="english" xml:space="preserve">
+    <value>English</value>
+  </data>
   <data name="expirydate" xml:space="preserve">
     <value>Expiry date</value>
   </data>
@@ -165,8 +177,14 @@
   <data name="fromcardlable" xml:space="preserve">
     <value>From card</value>
   </data>
+  <data name="fullname" xml:space="preserve">
+    <value>Full name:</value>
+  </data>
   <data name="genderlable" xml:space="preserve">
     <value>Gender:</value>
+  </data>
+  <data name="languages" xml:space="preserve">
+    <value>Languages</value>
   </data>
   <data name="loginbutton" xml:space="preserve">
     <value>Login</value>
@@ -189,6 +207,12 @@
   <data name="paymentsystemlable" xml:space="preserve">
     <value>Payment system:</value>
   </data>
+  <data name="personaldata" xml:space="preserve">
+    <value>Personal data</value>
+  </data>
+  <data name="personaldatachanges" xml:space="preserve">
+    <value>Personal data changes</value>
+  </data>
   <data name="phonelable" xml:space="preserve">
     <value>Phone:</value>
   </data>
@@ -206,6 +230,15 @@
   </data>
   <data name="repitlable" xml:space="preserve">
     <value>Repit:</value>
+  </data>
+  <data name="russion" xml:space="preserve">
+    <value>Russion</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="signout" xml:space="preserve">
+    <value>Sign out</value>
   </data>
   <data name="sum" xml:space="preserve">
     <value>Sum</value>
