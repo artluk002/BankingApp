@@ -74,7 +74,9 @@ namespace CourseProject
 
         private void ChangeMailBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            ChangeMailWindow CPW = new ChangeMailWindow();
+            CPW.ShowDialog();
+            updateClientInfo();
         }
 
         private void ChangePhoneNumberBtn_Click(object sender, RoutedEventArgs e)
