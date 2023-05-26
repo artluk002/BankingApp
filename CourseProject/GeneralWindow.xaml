@@ -19,7 +19,7 @@
     </Window.Resources>
     <Canvas Style="{StaticResource BG_Style}">
         <Button x:Name="CloseBtn" Content="X" Height="20  " Width="20" Canvas.Left="780" Background="Transparent" Foreground="Beige" HorizontalAlignment="Center" VerticalAlignment="Center" Click="CloseBtn_Click"/>
-        <Button x:Name="ClientBtn" Height="40" Width="40" Background="Transparent" BorderThickness="0">
+        <Button x:Name="ClientBtn" Height="40" Width="40" Background="Transparent" Click="ClientBtn_Click" BorderThickness="0">
             <Button.Content>
                 <Image Source="\Images\client.png"/>
             </Button.Content>

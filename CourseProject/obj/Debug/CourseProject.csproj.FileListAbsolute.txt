@@ -64,3 +64,5 @@ C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\AccessWindow.g.cs
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\AccessWindow.baml
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ClientWindow.g.cs
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ClientWindow.baml
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ChangePhoneWindow.g.cs
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ChangePhoneWindow.baml

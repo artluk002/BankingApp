@@ -198,6 +198,11 @@ namespace CourseProject
 
         private void TransactionsHistoryBtn_Click(object sender, RoutedEventArgs e)
         {
+            
+        }
+
+        private void ClientBtn_Click(object sender, RoutedEventArgs e)
+        {
             ClientWindow CW = new ClientWindow(this);
             this.Hide();
             CW.Show();
