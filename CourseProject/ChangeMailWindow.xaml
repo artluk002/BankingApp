@@ -1,0 +1,34 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseProject"
+        xmlns:Properties="clr-namespace:CourseProject.Properties" x:Class="CourseProject.ChangeMailWindow"
+        mc:Ignorable="d"
+        Title="ChangeMailWindow" Height="240" Width="285" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="5" UseAeroCaptionButtons="False" />
+    </WindowChrome.WindowChrome>
+
+    <Canvas Style="{StaticResource BG_Style}">
+        <TextBox x:Name="CodeTB" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="54" Width="250" Canvas.Left="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        <Label x:Name="CodeLable" Content="{x:Static Properties:Resources.code}" Style="{StaticResource Label_Style}" Canvas.Left="18" HorizontalContentAlignment="Center" Width="250" Canvas.Top="22" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Button x:Name="AccessCodeBtn" Content="{x:Static Properties:Resources.confirm}" Style="{StaticResource BtnLocalization_Style}" Canvas.Left="76" Canvas.Top="83" Click="AccessCodeBtn_Click" Width="132" Height="32" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="CloseBtn" Content="X" Height="20  " Width="20" Canvas.Left="265" Background="Transparent" Foreground="Beige" Click="CloseBtn_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="MailTB" Visibility="Hidden" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="152" Width="250" Canvas.Left="18" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="ChangeMailLable" Visibility="Hidden" Content="{x:Static Properties:Resources.changemailaddress}" Style="{StaticResource Label_Style}" Canvas.Left="18" HorizontalContentAlignment="Center" Width="250" Canvas.Top="120" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Button x:Name="AccessCodeBtn_Copy" Visibility="Hidden" Content="{x:Static Properties:Resources.confirm}" Style="{StaticResource BtnLocalization_Style}" Canvas.Left="76" Canvas.Top="181" Click="AccessCodeBtn_Copy_Click" Width="132" Height="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button x:Name="AccessCodeBtn_Copy1" Visibility="Hidden" Content="{x:Static Properties:Resources.confirm}" Style="{StaticResource BtnLocalization_Style}" Canvas.Left="76" Canvas.Top="83" Click="AccessCodeBtn_Copy1_Click" Width="132" Height="32" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+    </Canvas>
+</Window>
