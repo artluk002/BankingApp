@@ -114,6 +114,9 @@
     <Compile Include="ChangeMailWindow.xaml.cs">
       <DependentUpon>ChangeMailWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChangePassword.xaml.cs">
+      <DependentUpon>ChangePassword.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ChangePhoneWindow.xaml.cs">
       <DependentUpon>ChangePhoneWindow.xaml</DependentUpon>
     </Compile>
@@ -154,6 +157,10 @@
     <Page Include="ChangeMailWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChangePassword.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ChangePhoneWindow.xaml">
       <SubType>Designer</SubType>

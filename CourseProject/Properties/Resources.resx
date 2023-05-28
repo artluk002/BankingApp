@@ -156,6 +156,9 @@
   <data name="currencylable" xml:space="preserve">
     <value>Currency:</value>
   </data>
+  <data name="currentpassword" xml:space="preserve">
+    <value>Current password</value>
+  </data>
   <data name="cvvcode" xml:space="preserve">
     <value>CVV-code:</value>
   </data>
@@ -200,6 +203,9 @@
   </data>
   <data name="namelable" xml:space="preserve">
     <value>Name:</value>
+  </data>
+  <data name="newpassword" xml:space="preserve">
+    <value>New password:</value>
   </data>
   <data name="password" xml:space="preserve">
     <value>Password:</value>

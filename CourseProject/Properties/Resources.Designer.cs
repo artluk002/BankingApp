@@ -178,6 +178,15 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Current password.
+        /// </summary>
+        public static string currentpassword {
+            get {
+                return ResourceManager.GetString("currentpassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на CVV-code:.
         /// </summary>
         public static string cvvcode {
@@ -309,6 +318,15 @@ namespace CourseProject.Properties {
         public static string namelable {
             get {
                 return ResourceManager.GetString("namelable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на New password:.
+        /// </summary>
+        public static string newpassword {
+            get {
+                return ResourceManager.GetString("newpassword", resourceCulture);
             }
         }
         

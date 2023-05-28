@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\ОАиП\labs\CourseProject\CourseProject\App.xaml
-11-976319159
+12-48553792
 
-221395796966
+23-1015498817
 33938061545
-AccessWindow.xaml;ChangeMailWindow.xaml;ChangePhoneWindow.xaml;ClientWindow.xaml;GeneralWindow.xaml;MainWindow.xaml;NewCardRegistration.xaml;RecoveryWindow.xaml;RegistrationWindow.xaml;Resources\styles.xaml;TransferToCardWindow.xaml;
+AccessWindow.xaml;ChangeMailWindow.xaml;ChangePassword.xaml;ChangePhoneWindow.xaml;ClientWindow.xaml;GeneralWindow.xaml;MainWindow.xaml;NewCardRegistration.xaml;RecoveryWindow.xaml;RegistrationWindow.xaml;Resources\styles.xaml;TransferToCardWindow.xaml;
 
 False
 
