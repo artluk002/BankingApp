@@ -68,3 +68,5 @@ C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ChangePhoneWindow.g.cs
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ChangePhoneWindow.baml
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ChangeMailWindow.g.cs
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ChangeMailWindow.baml
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ChangePassword.baml
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ChangePassword.g.cs

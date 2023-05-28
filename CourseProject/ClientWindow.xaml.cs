@@ -69,7 +69,9 @@ namespace CourseProject
 
         private void ChangePasswordBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            ChangePassword CPW = new ChangePassword();
+            CPW.ShowDialog();
+            updateClientInfo();
         }
 
         private void ChangeMailBtn_Click(object sender, RoutedEventArgs e)
