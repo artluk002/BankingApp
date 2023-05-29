@@ -27,6 +27,11 @@ namespace CourseProject
         public ChangePassword()
         {
             InitializeComponent();
+            CurrentPasswordTB.TabIndex= 0;
+            NewPasswordTB.TabIndex= 1;
+            NewPasswordRepitTB.TabIndex= 2;
+            CurrentPasswordBtn.TabIndex= 3;
+            CloseBtn.TabIndex= 4;
         }
 
         private void CloseBtn_Click_1(object sender, RoutedEventArgs e)

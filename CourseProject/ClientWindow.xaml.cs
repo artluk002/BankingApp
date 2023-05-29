@@ -58,6 +58,7 @@ namespace CourseProject
 
         private void SignOutBtn_Click(object sender, RoutedEventArgs e)
         {
+            Client.delInstance();
             DataStorage.client = null;
             DataStorage.card = null;
             DataStorage.toSendCardNumber = null;

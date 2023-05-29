@@ -196,11 +196,29 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Date.
+        /// </summary>
+        public static string date {
+            get {
+                return ResourceManager.GetString("date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Debit.
         /// </summary>
         public static string debittypecard {
             get {
                 return ResourceManager.GetString("debittypecard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Destination.
+        /// </summary>
+        public static string destination {
+            get {
+                return ResourceManager.GetString("destination", resourceCulture);
             }
         }
         
@@ -327,6 +345,15 @@ namespace CourseProject.Properties {
         public static string newpassword {
             get {
                 return ResourceManager.GetString("newpassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Number.
+        /// </summary>
+        public static string number {
+            get {
+                return ResourceManager.GetString("number", resourceCulture);
             }
         }
         
@@ -462,6 +489,24 @@ namespace CourseProject.Properties {
         public static string surnamelable {
             get {
                 return ResourceManager.GetString("surnamelable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Top up mobile.
+        /// </summary>
+        public static string topupmobile {
+            get {
+                return ResourceManager.GetString("topupmobile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Transaction type.
+        /// </summary>
+        public static string transactiontype {
+            get {
+                return ResourceManager.GetString("transactiontype", resourceCulture);
             }
         }
         

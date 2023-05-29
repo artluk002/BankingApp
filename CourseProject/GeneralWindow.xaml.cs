@@ -198,7 +198,8 @@ namespace CourseProject
 
         private void TransactionsHistoryBtn_Click(object sender, RoutedEventArgs e)
         {
-            
+            TransactionsHistoryWindow THW = new TransactionsHistoryWindow();
+            THW.ShowDialog();
         }
 
         private void ClientBtn_Click(object sender, RoutedEventArgs e)
@@ -206,6 +207,11 @@ namespace CourseProject
             ClientWindow CW = new ClientWindow(this);
             this.Hide();
             CW.Show();
+        }
+
+        private void TransferToPhone_Click(object sender, RoutedEventArgs e)
+        {
+            DataStorage.toPhoneNumber = ToPhoneNumberTB.Text;
         }
     }
 }

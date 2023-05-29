@@ -162,8 +162,14 @@
   <data name="cvvcode" xml:space="preserve">
     <value>CVV-код:</value>
   </data>
+  <data name="date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
   <data name="debittypecard" xml:space="preserve">
     <value>Дебитовая</value>
+  </data>
+  <data name="destination" xml:space="preserve">
+    <value>Назначение</value>
   </data>
   <data name="drlop" xml:space="preserve">
     <value>Не помню логин или пароль</value>
@@ -206,6 +212,9 @@
   </data>
   <data name="newpassword" xml:space="preserve">
     <value>Новый пароль:</value>
+  </data>
+  <data name="number" xml:space="preserve">
+    <value>Номер</value>
   </data>
   <data name="password" xml:space="preserve">
     <value>Пароль:</value>
@@ -251,6 +260,12 @@
   </data>
   <data name="surnamelable" xml:space="preserve">
     <value>Фамилия:</value>
+  </data>
+  <data name="topupmobile" xml:space="preserve">
+    <value>Пополнение мобильного</value>
+  </data>
+  <data name="transactiontype" xml:space="preserve">
+    <value>Тип транзакции</value>
   </data>
   <data name="transferbutton" xml:space="preserve">
     <value>Перевести</value>

@@ -162,8 +162,14 @@
   <data name="cvvcode" xml:space="preserve">
     <value>CVV-code:</value>
   </data>
+  <data name="date" xml:space="preserve">
+    <value>Date</value>
+  </data>
   <data name="debittypecard" xml:space="preserve">
     <value>Debit</value>
+  </data>
+  <data name="destination" xml:space="preserve">
+    <value>Destination</value>
   </data>
   <data name="drlop" xml:space="preserve">
     <value>Don't remember login or password</value>
@@ -206,6 +212,9 @@
   </data>
   <data name="newpassword" xml:space="preserve">
     <value>New password:</value>
+  </data>
+  <data name="number" xml:space="preserve">
+    <value>Number</value>
   </data>
   <data name="password" xml:space="preserve">
     <value>Password:</value>
@@ -251,6 +260,12 @@
   </data>
   <data name="surnamelable" xml:space="preserve">
     <value>Surname:</value>
+  </data>
+  <data name="topupmobile" xml:space="preserve">
+    <value>Top up mobile</value>
+  </data>
+  <data name="transactiontype" xml:space="preserve">
+    <value>Transaction type</value>
   </data>
   <data name="transferbutton" xml:space="preserve">
     <value>Transfer</value>
