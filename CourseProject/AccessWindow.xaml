@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CourseProject"
         xmlns:Properties="clr-namespace:CourseProject.Properties" x:Class="CourseProject.AccessWindow"
         mc:Ignorable="d"
-        Title="AccessWindow" Height="121" Width="209" ResizeMode="NoResize">
+        Title="AccessWindow" Height="121" Width="209" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

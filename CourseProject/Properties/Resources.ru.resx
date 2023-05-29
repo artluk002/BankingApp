@@ -132,6 +132,15 @@
   <data name="cardtypelable" xml:space="preserve">
     <value>Тип карты: </value>
   </data>
+  <data name="changemailaddress" xml:space="preserve">
+    <value>Изменить эл. почту</value>
+  </data>
+  <data name="changepassword" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="changephonenumber" xml:space="preserve">
+    <value>Изменить номер телефона</value>
+  </data>
   <data name="code" xml:space="preserve">
     <value>Код:</value>
   </data>
@@ -147,14 +156,26 @@
   <data name="currencylable" xml:space="preserve">
     <value>Валюта:</value>
   </data>
+  <data name="currentpassword" xml:space="preserve">
+    <value>Текущий пароль:</value>
+  </data>
   <data name="cvvcode" xml:space="preserve">
     <value>CVV-код:</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>Дата</value>
   </data>
   <data name="debittypecard" xml:space="preserve">
     <value>Дебитовая</value>
   </data>
+  <data name="destination" xml:space="preserve">
+    <value>Назначение</value>
+  </data>
   <data name="drlop" xml:space="preserve">
     <value>Не помню логин или пароль</value>
+  </data>
+  <data name="english" xml:space="preserve">
+    <value>Английский</value>
   </data>
   <data name="expirydate" xml:space="preserve">
     <value>Срок действия:</value>
@@ -165,8 +186,14 @@
   <data name="fromcardlable" xml:space="preserve">
     <value>С карты</value>
   </data>
+  <data name="fullname" xml:space="preserve">
+    <value>ФИО:</value>
+  </data>
   <data name="genderlable" xml:space="preserve">
     <value>Пол:</value>
+  </data>
+  <data name="languages" xml:space="preserve">
+    <value>Языки</value>
   </data>
   <data name="loginbutton" xml:space="preserve">
     <value>Войти</value>
@@ -183,11 +210,23 @@
   <data name="namelable" xml:space="preserve">
     <value>Имя:</value>
   </data>
+  <data name="newpassword" xml:space="preserve">
+    <value>Новый пароль:</value>
+  </data>
+  <data name="number" xml:space="preserve">
+    <value>Номер</value>
+  </data>
   <data name="password" xml:space="preserve">
     <value>Пароль:</value>
   </data>
   <data name="paymentsystemlable" xml:space="preserve">
     <value>Платёжная система:</value>
+  </data>
+  <data name="personaldata" xml:space="preserve">
+    <value>Личные данные</value>
+  </data>
+  <data name="personaldatachanges" xml:space="preserve">
+    <value>Изменения личных данных</value>
   </data>
   <data name="phonelable" xml:space="preserve">
     <value>Телефон:</value>
@@ -207,11 +246,26 @@
   <data name="repitlable" xml:space="preserve">
     <value>Повтори:</value>
   </data>
+  <data name="russion" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="signout" xml:space="preserve">
+    <value>Выйти из аккаунта</value>
+  </data>
   <data name="sum" xml:space="preserve">
     <value>Сумма</value>
   </data>
   <data name="surnamelable" xml:space="preserve">
     <value>Фамилия:</value>
+  </data>
+  <data name="topupmobile" xml:space="preserve">
+    <value>Пополнение мобильного</value>
+  </data>
+  <data name="transactiontype" xml:space="preserve">
+    <value>Тип транзакции</value>
   </data>
   <data name="transferbutton" xml:space="preserve">
     <value>Перевести</value>

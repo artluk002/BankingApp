@@ -58,7 +58,11 @@ namespace CourseProject
                 {
                     MessageBox.Show("Pin code should have 4 numbers!", "Error");
                 }
-                var cardType = CardTypeCB.SelectionBoxItem.ToString();
+                string cardType;
+                if (CardTypeCB.SelectionBoxItem.ToString() == Properties.Resources.debittypecard)
+                    cardType = "Debit";
+                else
+                    cardType = "Credit";
                 var currency = CurrencyCB.SelectionBoxItem.ToString();
                 var paymentSystem = PaymentSystemCB.SelectionBoxItem.ToString();
                 var cardNumber = "";

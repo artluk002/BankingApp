@@ -106,6 +106,33 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Change mail address.
+        /// </summary>
+        public static string changemailaddress {
+            get {
+                return ResourceManager.GetString("changemailaddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Change password.
+        /// </summary>
+        public static string changepassword {
+            get {
+                return ResourceManager.GetString("changepassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Change phone number.
+        /// </summary>
+        public static string changephonenumber {
+            get {
+                return ResourceManager.GetString("changephonenumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Code:.
         /// </summary>
         public static string code {
@@ -151,11 +178,29 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Current password.
+        /// </summary>
+        public static string currentpassword {
+            get {
+                return ResourceManager.GetString("currentpassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на CVV-code:.
         /// </summary>
         public static string cvvcode {
             get {
                 return ResourceManager.GetString("cvvcode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Date.
+        /// </summary>
+        public static string date {
+            get {
+                return ResourceManager.GetString("date", resourceCulture);
             }
         }
         
@@ -169,11 +214,29 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Destination.
+        /// </summary>
+        public static string destination {
+            get {
+                return ResourceManager.GetString("destination", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Don&apos;t remember login or password.
         /// </summary>
         public static string drlop {
             get {
                 return ResourceManager.GetString("drlop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на English.
+        /// </summary>
+        public static string english {
+            get {
+                return ResourceManager.GetString("english", resourceCulture);
             }
         }
         
@@ -205,11 +268,29 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Full name:.
+        /// </summary>
+        public static string fullname {
+            get {
+                return ResourceManager.GetString("fullname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Gender:.
         /// </summary>
         public static string genderlable {
             get {
                 return ResourceManager.GetString("genderlable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Languages.
+        /// </summary>
+        public static string languages {
+            get {
+                return ResourceManager.GetString("languages", resourceCulture);
             }
         }
         
@@ -259,6 +340,24 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на New password:.
+        /// </summary>
+        public static string newpassword {
+            get {
+                return ResourceManager.GetString("newpassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Number.
+        /// </summary>
+        public static string number {
+            get {
+                return ResourceManager.GetString("number", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Password:.
         /// </summary>
         public static string password {
@@ -273,6 +372,24 @@ namespace CourseProject.Properties {
         public static string paymentsystemlable {
             get {
                 return ResourceManager.GetString("paymentsystemlable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Personal data.
+        /// </summary>
+        public static string personaldata {
+            get {
+                return ResourceManager.GetString("personaldata", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Personal data changes.
+        /// </summary>
+        public static string personaldatachanges {
+            get {
+                return ResourceManager.GetString("personaldatachanges", resourceCulture);
             }
         }
         
@@ -331,6 +448,33 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Russion.
+        /// </summary>
+        public static string russion {
+            get {
+                return ResourceManager.GetString("russion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Settings.
+        /// </summary>
+        public static string settings {
+            get {
+                return ResourceManager.GetString("settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sign out.
+        /// </summary>
+        public static string signout {
+            get {
+                return ResourceManager.GetString("signout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Sum.
         /// </summary>
         public static string sum {
@@ -345,6 +489,24 @@ namespace CourseProject.Properties {
         public static string surnamelable {
             get {
                 return ResourceManager.GetString("surnamelable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Top up mobile.
+        /// </summary>
+        public static string topupmobile {
+            get {
+                return ResourceManager.GetString("topupmobile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Transaction type.
+        /// </summary>
+        public static string transactiontype {
+            get {
+                return ResourceManager.GetString("transactiontype", resourceCulture);
             }
         }
         

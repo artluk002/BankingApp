@@ -75,7 +75,11 @@ namespace CourseProject
 
         private void TransferBtn_Click(object sender, RoutedEventArgs e)
         {
+            Random r = new Random();
             double money;
+            string transaction_number = "p";    
+            for(int i = 0; i < 10; i++)
+                transaction_number += r.Next(0, 10).ToString();
             if (FromCardCvvCodeTB.Text == "***")
             {
                 MessageBox.Show("Enter your cvv code and try again", "Null cvv code error", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -89,6 +93,11 @@ namespace CourseProject
             if(!double.TryParse(MoneyToSendTB.Text, out money))
             {
                 MessageBox.Show("The amount you entered is incorrect. Check your amount and tyr again", "Money error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            if(DataStorage.card.Balance < money)
+            {
+                MessageBox.Show("You can't transfer more money than you have now");
                 return;
             }
             if(!DataStorage.isCardExist(ToCardNumberTB.Text))
@@ -135,9 +144,27 @@ namespace CourseProject
                     command1.Parameters.Add("@am", MySqlDbType.Double).Value = (money * DataStorage.rates[ToCard.Currency]);
                     command1.Parameters.Add("@ids", MySqlDbType.Int32).Value = ToCard.Id;
 
+                    MySqlCommand command2 = new MySqlCommand("INSERT INTO `transactions` (`type`, `destination`, `transaction_date`, `number`, `transaction_value`, `card_id`) VALUES (@t, @d, @td, @n, @tv, @ci)", db.getConnection());
+                    command2.Parameters.Add("@t", MySqlDbType.VarChar).Value = "Transfer";
+                    command2.Parameters.Add("@d", MySqlDbType.VarChar).Value = $"to {ToCard.Number}";
+                    command2.Parameters.Add("@td", MySqlDbType.DateTime).Value = DateTime.Now;
+                    command2.Parameters.Add("@n", MySqlDbType.VarChar).Value = transaction_number;
+                    command2.Parameters.Add("@tv", MySqlDbType.Double).Value = (money * DataStorage.rates[DataStorage.card.Currency]);
+                    command2.Parameters.Add("ci", MySqlDbType.Int32).Value = DataStorage.card.Id;
+
+                    MySqlCommand command3 = new MySqlCommand("INSERT INTO `transactions` (`type`, `destination`, `transaction_date`, `number`, `transaction_value`, `card_id`) VALUES (@t, @d, @td, @n, @tv, @ci)", db.getConnection());
+                    command3.Parameters.Add("@t", MySqlDbType.VarChar).Value = "Transfer";
+                    command3.Parameters.Add("@d", MySqlDbType.VarChar).Value = $"From {DataStorage.card.Number}";
+                    command3.Parameters.Add("@td", MySqlDbType.DateTime).Value = DateTime.Now;
+                    command3.Parameters.Add("@n", MySqlDbType.VarChar).Value = transaction_number;
+                    command3.Parameters.Add("@tv", MySqlDbType.Double).Value = (money * DataStorage.rates[ToCard.Currency]);
+                    command3.Parameters.Add("ci", MySqlDbType.Int32).Value = ToCard.Id;
+
                     db.openConnection();
                     command.ExecuteNonQuery();
                     command1.ExecuteNonQuery();
+                    command2.ExecuteNonQuery();
+                    command3.ExecuteNonQuery();
                     Close();
                     backUp.updateCards();
                 }

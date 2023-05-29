@@ -30,6 +30,7 @@ namespace CourseProject
     public partial class RegistrationWindow : Window
     {
         private MainWindow backUp;
+        private Regex onlyEnCharacters = new Regex(@"^[A-z]+$");
         private Regex phoneRegex = new Regex(@"^(\+375|80)(17|25|29|33|44)(\d{7})$");
         private Regex loginRegex = new Regex(@"^(\w{4,20})$");
         private Regex passwordRegex = new Regex(@"^.{8,20}$");
@@ -243,6 +244,18 @@ namespace CourseProject
             RegistrationWindow newWin = new RegistrationWindow(backUp);
             newWin.Show();
             this.Close();
+        }
+
+        private void FirstNameTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Разрешение ввода только Английских символов
+            e.Handled = !onlyEnCharacters.IsMatch(e.Text);
+        }
+
+        private void SurNameTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Разрешение ввода только Английских символов
+            e.Handled = !onlyEnCharacters.IsMatch(e.Text);
         }
     }
 }

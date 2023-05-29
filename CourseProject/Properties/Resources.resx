@@ -132,6 +132,15 @@
   <data name="cardtypelable" xml:space="preserve">
     <value>Card type:</value>
   </data>
+  <data name="changemailaddress" xml:space="preserve">
+    <value>Change mail address</value>
+  </data>
+  <data name="changepassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="changephonenumber" xml:space="preserve">
+    <value>Change phone number</value>
+  </data>
   <data name="code" xml:space="preserve">
     <value>Code:</value>
   </data>
@@ -147,14 +156,26 @@
   <data name="currencylable" xml:space="preserve">
     <value>Currency:</value>
   </data>
+  <data name="currentpassword" xml:space="preserve">
+    <value>Current password</value>
+  </data>
   <data name="cvvcode" xml:space="preserve">
     <value>CVV-code:</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>Date</value>
   </data>
   <data name="debittypecard" xml:space="preserve">
     <value>Debit</value>
   </data>
+  <data name="destination" xml:space="preserve">
+    <value>Destination</value>
+  </data>
   <data name="drlop" xml:space="preserve">
     <value>Don't remember login or password</value>
+  </data>
+  <data name="english" xml:space="preserve">
+    <value>English</value>
   </data>
   <data name="expirydate" xml:space="preserve">
     <value>Expiry date</value>
@@ -165,8 +186,14 @@
   <data name="fromcardlable" xml:space="preserve">
     <value>From card</value>
   </data>
+  <data name="fullname" xml:space="preserve">
+    <value>Full name:</value>
+  </data>
   <data name="genderlable" xml:space="preserve">
     <value>Gender:</value>
+  </data>
+  <data name="languages" xml:space="preserve">
+    <value>Languages</value>
   </data>
   <data name="loginbutton" xml:space="preserve">
     <value>Login</value>
@@ -183,11 +210,23 @@
   <data name="namelable" xml:space="preserve">
     <value>Name:</value>
   </data>
+  <data name="newpassword" xml:space="preserve">
+    <value>New password:</value>
+  </data>
+  <data name="number" xml:space="preserve">
+    <value>Number</value>
+  </data>
   <data name="password" xml:space="preserve">
     <value>Password:</value>
   </data>
   <data name="paymentsystemlable" xml:space="preserve">
     <value>Payment system:</value>
+  </data>
+  <data name="personaldata" xml:space="preserve">
+    <value>Personal data</value>
+  </data>
+  <data name="personaldatachanges" xml:space="preserve">
+    <value>Personal data changes</value>
   </data>
   <data name="phonelable" xml:space="preserve">
     <value>Phone:</value>
@@ -207,11 +246,26 @@
   <data name="repitlable" xml:space="preserve">
     <value>Repit:</value>
   </data>
+  <data name="russion" xml:space="preserve">
+    <value>Russion</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="signout" xml:space="preserve">
+    <value>Sign out</value>
+  </data>
   <data name="sum" xml:space="preserve">
     <value>Sum</value>
   </data>
   <data name="surnamelable" xml:space="preserve">
     <value>Surname:</value>
+  </data>
+  <data name="topupmobile" xml:space="preserve">
+    <value>Top up mobile</value>
+  </data>
+  <data name="transactiontype" xml:space="preserve">
+    <value>Transaction type</value>
   </data>
   <data name="transferbutton" xml:space="preserve">
     <value>Transfer</value>

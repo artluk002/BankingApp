@@ -111,6 +111,15 @@
     <Compile Include="AccessWindow.xaml.cs">
       <DependentUpon>AccessWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChangeMailWindow.xaml.cs">
+      <DependentUpon>ChangeMailWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.xaml.cs">
+      <DependentUpon>ChangePassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePhoneWindow.xaml.cs">
+      <DependentUpon>ChangePhoneWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\Client.cs" />
     <Compile Include="Classes\CurrencyUpdater.cs" />
@@ -118,6 +127,10 @@
     <Compile Include="Classes\DB.cs" />
     <Compile Include="Classes\MailMessageBuilder.cs" />
     <Compile Include="Classes\RegistrationHelper.cs" />
+    <Compile Include="Classes\Transactions.cs" />
+    <Compile Include="ClientWindow.xaml.cs">
+      <DependentUpon>ClientWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GeneralWindow.xaml.cs">
       <DependentUpon>GeneralWindow.xaml</DependentUpon>
     </Compile>
@@ -135,10 +148,29 @@
     <Compile Include="RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TransactionsHistoryWindow.xaml.cs">
+      <DependentUpon>TransactionsHistoryWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TransferToCardWindow.xaml.cs">
       <DependentUpon>TransferToCardWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AccessWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChangeMailWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChangePassword.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ChangePhoneWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ClientWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,6 +203,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resources\styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TransactionsHistoryWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -217,6 +253,18 @@
     <Resource Include="Images\close.png" />
     <Resource Include="Images\FromCardToCard.png" />
     <Resource Include="Images\trans_history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\client_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -19,12 +19,12 @@
     </Window.Resources>
     <Canvas Style="{StaticResource BG_Style}">
         <Button x:Name="CloseBtn" Content="X" Height="20  " Width="20" Canvas.Left="780" Background="Transparent" Foreground="Beige" HorizontalAlignment="Center" VerticalAlignment="Center" Click="CloseBtn_Click"/>
-        <Button x:Name="ClientBtn" Height="40" Width="40" Background="Transparent" BorderThickness="0">
+        <Button x:Name="ClientBtn" Height="40" Width="40" Background="Transparent" Click="ClientBtn_Click" BorderThickness="0">
             <Button.Content>
                 <Image Source="\Images\client.png"/>
             </Button.Content>
         </Button>
-        <Button Canvas.Left="40" x:Name="TransactionsHistoryBtn" Height="40" Width="40" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Canvas.Left="40" x:Name="TransactionsHistoryBtn" Height="40" Width="40" Background="Transparent" BorderThickness="0" Click="TransactionsHistoryBtn_Click" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button.Content>
                 <Image Source="\Images\trans_history.png"/>
             </Button.Content>
@@ -57,6 +57,31 @@
         <Button x:Name="TransferToCard" Content=">" Canvas.Left="225" Canvas.Top="366" Background="Transparent" Foreground="Beige" FontSize="17" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="25" Height="27" HorizontalAlignment="Center" VerticalAlignment="Top" BorderThickness="0" Click="TransferToCard_Click"/>
         <Label x:Name="lable_currency_code" Visibility="Hidden" Content="USD" Style="{StaticResource Label_Style}" Canvas.Left="220" Canvas.Top="224" HorizontalAlignment="Center" VerticalAlignment="Top" />
         <Label x:Name="lable_balance" Visibility="Hidden" Content="0,0" Style="{StaticResource Label_Style}" Canvas.Left="273" Canvas.Top="224" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <GroupBox Height="97" Width="236" VerticalContentAlignment="Bottom" Canvas.Left="282" Canvas.Top="335" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0,0.5" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5D5A5A"/>
+                    <GradientStop Color="#FF484343" Offset="1"/>
+                    <GradientStop Color="#FF585050" Offset="0.489"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+            <TextBox x:Name="ToPhoneNumberTB" HorizontalAlignment="Left" TextWrapping="Wrap" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Bottom" FontSize="17" Foreground="Beige" Text="" Width="194" Height="26" PreviewTextInput="ToCardNumber_PreviewTextInput"/>
+        </GroupBox>
+        <GroupBox Height="97" Width="236" VerticalContentAlignment="Bottom" Canvas.Left="542" Canvas.Top="335" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0,0.5" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5D5A5A"/>
+                    <GradientStop Color="#FF484343" Offset="1"/>
+                    <GradientStop Color="#FF585050" Offset="0.489"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+            <TextBox x:Name="ToCardNumberTB2" HorizontalAlignment="Left" TextWrapping="Wrap" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Bottom" FontSize="17" Foreground="Beige" Text="" Width="194" Height="26" PreviewTextInput="ToCardNumber_PreviewTextInput"/>
+        </GroupBox>
+        <Rectangle Height="2" Canvas.Left="288" Stroke="DarkGray" Canvas.Top="395" Width="194" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle Height="2" Canvas.Left="548" Stroke="DarkGray" Canvas.Top="395" Width="194" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Image Source="/Images/Phone.png" Height="30" Width="30" Canvas.Left="285" Canvas.Top="338" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="{x:Static language:Resources.topupmobile}" Style="{StaticResource Label_Style}" Canvas.Left="315" Canvas.Top="338" FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button x:Name="TransferToPhone" Content="&gt;" Canvas.Left="488" Canvas.Top="366" Background="Transparent" Foreground="Beige" FontSize="17" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="25" Height="27" BorderThickness="0" Click="TransferToPhone_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </Window>
     
