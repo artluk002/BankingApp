@@ -15,6 +15,7 @@ namespace CourseProject.Classes
         public static Dictionary<string, double> rates;
         public static string toSendCardNumber;
         public static int attempts;
+        public static string toPhoneNumber; 
         public static bool isCardExist(string cardNumber)
         {
             DB db = DB.getInstance();

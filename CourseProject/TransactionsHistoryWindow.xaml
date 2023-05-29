@@ -1,0 +1,53 @@
+﻿<Window x:Class="CourseProject.TransactionsHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseProject"
+        xmlns:Properties="clr-namespace:CourseProject.Properties"
+        mc:Ignorable="d"
+        Title="TransactionsHistoryWindow" Height="600" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="5" UseAeroCaptionButtons="False" />
+    </WindowChrome.WindowChrome>
+    <Canvas Style="{StaticResource BG_Style}">
+        <ListView x:Name="TransactionsList" Height="550" Width="880" Canvas.Left="10" Canvas.Top="24" FontSize="19" Foreground="Beige" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent" MouseDoubleClick="TransactionsList_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Type}" Header="{x:Static Properties:Resources.transactiontype}" Width="155"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Destination}" Header="{x:Static Properties:Resources.destination}" Width="185"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Transaction_Date}" Header="{x:Static Properties:Resources.date}" Width="185"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Number}" Header="{x:Static Properties:Resources.number}" Width="175"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Transaction_Value}" Header="{x:Static Properties:Resources.sum}" Width="170"/>
+                </GridView>
+            </ListView.View>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Background" Value="Transparent" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="LightCoral" />
+                            <Setter Property="Foreground" Value="White" />
+                        </Trigger>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Background" Value="LightCoral" />
+                            <Setter Property="Foreground" Value="White" />
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="LightCoral" />
+                            <Setter Property="Foreground" Value="White" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+        <Button x:Name="CloseBtn" Content="X" Height="20" Width="20" Canvas.Left="880" Background="Transparent" Foreground="Beige" Click="CloseBtn_Click"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Canvas>
+</Window>
