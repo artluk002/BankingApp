@@ -144,11 +144,31 @@
   <data name="code" xml:space="preserve">
     <value>Код:</value>
   </data>
+  <data name="commission" xml:space="preserve">
+    <value>Комисия</value>
+  </data>
+  <data name="communalpayments" xml:space="preserve">
+    <value>Коммунальные платежи</value>
+  </data>
+  <data name="communalunderlable" xml:space="preserve">
+    <value>Оплата различных комунальных 
+услуг с карты на лицевой счёт. 
+Перед оплатой убедитесь, что 
+правильно ввели номер лицевого 
+счёта во избежании ошибочной 
+оплаты, так как в случае 
+ошибочного платежа банк не 
+сможет помочь вам с отменой 
+оплаты!</value>
+  </data>
   <data name="confirm" xml:space="preserve">
     <value>Подтвердить</value>
   </data>
   <data name="createbutton" xml:space="preserve">
     <value>Создать</value>
+  </data>
+  <data name="credit" xml:space="preserve">
+    <value>Кредит</value>
   </data>
   <data name="credittypecard" xml:space="preserve">
     <value>Кредитная</value>
@@ -192,6 +212,20 @@
   <data name="genderlable" xml:space="preserve">
     <value>Пол:</value>
   </data>
+  <data name="internetpayments" xml:space="preserve">
+    <value>Интернет платежи</value>
+  </data>
+  <data name="internetunderlable" xml:space="preserve">
+    <value>Оплата различных интернет 
+услуг с карты на лицевой счёт. 
+Перед оплатой убедитесь, что 
+правильно ввели номер лицевого 
+счёта во избежании ошибочной 
+оплаты, так как в случае 
+ошибочного платежа банк не 
+сможет помочь вам с отменой 
+оплаты!</value>
+  </data>
   <data name="languages" xml:space="preserve">
     <value>Языки</value>
   </data>
@@ -222,6 +256,9 @@
   <data name="paymentsystemlable" xml:space="preserve">
     <value>Платёжная система:</value>
   </data>
+  <data name="personalaccount" xml:space="preserve">
+    <value>Личный счёт</value>
+  </data>
   <data name="personaldata" xml:space="preserve">
     <value>Личные данные</value>
   </data>
@@ -230,6 +267,10 @@
   </data>
   <data name="phonelable" xml:space="preserve">
     <value>Телефон:</value>
+  </data>
+  <data name="phoneunderlable" xml:space="preserve">
+    <value>Пополнение только белорусских номеров 
+(80 или +375)</value>
   </data>
   <data name="pincodelable" xml:space="preserve">
     <value>PIN-код:</value>
@@ -246,8 +287,14 @@
   <data name="repitlable" xml:space="preserve">
     <value>Повтори:</value>
   </data>
+  <data name="replenishmentonlytobelarusiannumbers" xml:space="preserve">
+    <value>Пополнение только на белорусские номера</value>
+  </data>
   <data name="russion" xml:space="preserve">
     <value>Русский</value>
+  </data>
+  <data name="services" xml:space="preserve">
+    <value>Услуги</value>
   </data>
   <data name="settings" xml:space="preserve">
     <value>Настройки</value>
@@ -261,8 +308,18 @@
   <data name="surnamelable" xml:space="preserve">
     <value>Фамилия:</value>
   </data>
+  <data name="tocardunderlable" xml:space="preserve">
+    <value>Перевод на карты VISA или MasterCard 
+без комиссии!</value>
+  </data>
+  <data name="topayment" xml:space="preserve">
+    <value>К оплате</value>
+  </data>
   <data name="topupmobile" xml:space="preserve">
     <value>Пополнение мобильного</value>
+  </data>
+  <data name="topupyouraccount" xml:space="preserve">
+    <value>Пополнить счёт</value>
   </data>
   <data name="transactiontype" xml:space="preserve">
     <value>Тип транзакции</value>

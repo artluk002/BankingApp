@@ -45,9 +45,9 @@ namespace CourseProject
                 List<Transactions> transactions = new List<Transactions>();
                 foreach(DataRow row in table.Rows)
                 {
-                    transactions.Add(new Transactions(Convert.ToInt32(row["id"]), row["type"].ToString(), row["destination"].ToString(), Convert.ToDateTime(row["transaction_date"]).ToString("dd.MM.yyyy HH:mm:ss"), row["number"].ToString(), Convert.ToDouble(row["transaction_value"]), Convert.ToInt32(row["card_id"])));
+                    transactions.Add(new Transactions(Convert.ToInt32(row["id"]), row["type"].ToString(), row["destination"].ToString(), Convert.ToDateTime(row["transaction_date"]).ToString("yyyy-MM-dd HH:mm:ss"), row["number"].ToString(), Convert.ToDouble(row["transaction_value"]), Convert.ToInt32(row["card_id"]), row["description"].ToString()));
                 }
-                transactions = transactions.OrderByDescending(x => x.Transaction_Date).ToList();
+                transactions = transactions.OrderByDescending(x => Convert.ToDateTime(x.Transaction_Date)).ToList();
                 TransactionsList.ItemsSource = transactions;
             }
             catch(Exception ex)
@@ -59,6 +59,24 @@ namespace CourseProject
         private void TransactionsList_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             Load_Transactions();
+        }
+
+        private void ListViewItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            TransactionDescriptionWindow TDW = new TransactionDescriptionWindow((TransactionsList.SelectedItem as Transactions).Description);
+            TDW.ShowDialog();
+        }
+
+        private void ListViewItem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Space)
+            {
+                if (TransactionsList.SelectedItem != null)
+                {
+                    TransactionDescriptionWindow TDW = new TransactionDescriptionWindow((TransactionsList.SelectedItem as Transactions).Description);
+                    TDW.ShowDialog();
+                }
+            }
         }
     }
 }

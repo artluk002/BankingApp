@@ -72,3 +72,11 @@ C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ChangePassword.baml
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\ChangePassword.g.cs
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\TransactionsHistoryWindow.g.cs
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\TransactionsHistoryWindow.baml
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\TopUpMobileWindow.g.cs
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\TopUpMobileWindow.baml
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\TransactionDescriptionWindow.g.cs
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\TransactionDescriptionWindow.baml
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\CommunalPaymentsWindow.g.cs
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\CommunalPaymentsWindow.baml
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\InternetPaymentsWindow.g.cs
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\InternetPaymentsWindow.baml

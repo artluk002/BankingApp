@@ -24,6 +24,7 @@ namespace CourseProject
     /// </summary>
     public partial class GeneralWindow : Window
     {
+        private Regex phoneRegex = new Regex(@"^(\+375|80)(17|25|29|33|44)(\d{7})$");
         private DB db;
         public GeneralWindow()
         {
@@ -211,7 +212,72 @@ namespace CourseProject
 
         private void TransferToPhone_Click(object sender, RoutedEventArgs e)
         {
+            if(!phoneRegex.IsMatch(ToPhoneNumberTB.Text))
+            {
+                MessageBox.Show("Your number isn't correct, please check it and try again!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if(DataStorage.card == null)
+            {
+                MessageBox.Show("Select your card!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             DataStorage.toPhoneNumber = ToPhoneNumberTB.Text;
+            TopUpMobileWindow TUMW = new TopUpMobileWindow(this);
+            TUMW.ShowDialog();
+
+        }
+
+        private void ToPhoneNumberTB_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if ((((TextBox)sender).Text + e.Text).StartsWith("+"))
+            {
+                if ((((TextBox)sender).Text + e.Text).Length > 13)
+                {
+                    e.Handled = true; // Предотвращаем ввод символа
+                }
+                else
+                {
+                    e.Handled = false;
+                }
+            }
+            else if ((((TextBox)sender).Text + e.Text).StartsWith("8"))
+            {
+                if((((TextBox)sender).Text + e.Text).Length > 11)
+                {
+                    e.Handled = true; // Предотвращаем ввод символа
+                }
+                else
+                {
+                    e.Handled = false;
+                }
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void CommunalPaymentsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataStorage.card == null)
+            {
+                MessageBox.Show("Select your card!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            CommunalPaymentsWindow CPW = new CommunalPaymentsWindow(this);
+            CPW.ShowDialog();
+        }
+
+        private void InternetPaymentsBtn_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataStorage.card == null)
+            {
+                MessageBox.Show("Select your card!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            InternetPaymentsWindow IPW = new InternetPaymentsWindow(this);
+            IPW.ShowDialog();
         }
     }
 }

@@ -30,6 +30,8 @@
             </ListView.View>
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
+                    <EventSetter Event="MouseDoubleClick" Handler="ListViewItem_MouseDoubleClick" />
+                    <EventSetter Event="KeyDown" Handler="ListViewItem_KeyDown" />
                     <Setter Property="Background" Value="Transparent" />
                     <Style.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">

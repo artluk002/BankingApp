@@ -21,12 +21,12 @@
     <Canvas x:Name="MainCanvas" Style="{StaticResource BG_Style}">
 
         <Canvas x:Name="Step1Canvas" Width="400" Height="120" Margin="0, 20, 0, 0">
-            <TextBox x:Name="MailTextBox" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="46" Width="250" Canvas.Left="104" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="MailTextBox" Style="{StaticResource TB_Style}" Text="" Canvas.Top="46" Width="250" Canvas.Left="104" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <Button x:Name="ConfirmBtn1" Content="{x:Static language:Resources.confirm}" Style="{StaticResource BtnConfirm_Style}" Canvas.Left="155" Canvas.Top="75" HorizontalAlignment="Center" VerticalAlignment="Top" Click="ConfirmBtn1_Click"/>
             <Label x:Name="MailLable" Content="{x:Static language:Resources.maillable}" Style="{StaticResource Label_Style}" Canvas.Left="10" Canvas.Top="38" HorizontalAlignment="Left" VerticalAlignment="Center" Width="94" />
         </Canvas>
         <Canvas x:Name="Step2Canvas" Width="400" Height="90" Margin="0, 140, 0, 0" Visibility="Hidden">
-            <TextBox x:Name="AccessCodeTextBox" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="12" Width="250" Canvas.Left="102" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="AccessCodeTextBox" Style="{StaticResource TB_Style}" Text="" Canvas.Top="12" Width="250" Canvas.Left="102" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Button x:Name="ConfirmBtn2" Content="{x:Static language:Resources.confirm}" Style="{StaticResource BtnConfirm_Style}" Canvas.Left="153" Canvas.Top="41" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ConfirmBtn2_Click"/>
             <Label x:Name="AccessCodeLable" Content="{x:Static language:Resources.code}" Style="{StaticResource Label_Style}" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="92" />
         </Canvas>

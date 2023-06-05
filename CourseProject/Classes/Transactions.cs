@@ -20,8 +20,10 @@ namespace CourseProject.Classes
         private double transaction_value;
         public double Transaction_Value { get { return transaction_value; } }
         private int card_id;
+        public string Description { get { return description; } }
+        private string description;
 
-        public Transactions(int id, string type, string destination, string transaction_date, string number, double transaction_value, int card_id)
+        public Transactions(int id, string type, string destination, string transaction_date, string number, double transaction_value, int card_id, string description)
         {
             this.id = id;
             this.type = type;
@@ -30,6 +32,7 @@ namespace CourseProject.Classes
             this.number = number;
             this.transaction_value = transaction_value;
             this.card_id = card_id;
+            this.description = description;
         }
     }
 }
