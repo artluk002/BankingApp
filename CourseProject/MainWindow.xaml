@@ -21,7 +21,7 @@
         </ResourceDictionary>
     </Window.Resources>
     <Canvas Style="{StaticResource BG_Style}">
-        <TextBox x:Name="LoginTextBox" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="128" Width="250" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="113"/>
+        <TextBox x:Name="LoginTextBox" Style="{StaticResource TB_Style}" Text="" Canvas.Top="128" Width="250" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="113"/>
         <PasswordBox x:Name="PasswordTextBox" Style="{StaticResource PB_Style}" Width="250" Height="24" FontSize="14" VerticalContentAlignment="Center" Canvas.Left="113" Canvas.Top="181" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
         <Label x:Name="LoginLable" Content="{x:Static language:Resources.loginlable}" Style="{StaticResource Label_Style}" Canvas.Left="20" Canvas.Top="120" HorizontalAlignment="Center" VerticalAlignment="Top" Width="93" />

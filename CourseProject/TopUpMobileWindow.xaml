@@ -1,0 +1,65 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseProject"
+        xmlns:Properties="clr-namespace:CourseProject.Properties" x:Class="CourseProject.TopUpMobileWindow"
+        mc:Ignorable="d"
+        Title="TopUpMobileWindow" Height="608" Width="414" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="5" UseAeroCaptionButtons="False" />
+    </WindowChrome.WindowChrome>
+    <Canvas Style="{StaticResource BG_Style}">
+
+        <Image Source="/Images/Phone.png" Height="40" Width="40" Canvas.Left="1" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="1"/>
+        <Image Source="/Images/BelFlag.png" Height="40" Width="54" Canvas.Left="51" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="81"/>
+        <Label Content="{x:Static Properties:Resources.topupmobile}" Style="{StaticResource Label_Style}" Canvas.Left="41" FontSize="17" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="1" Height="40" Width="250" />
+        <Button x:Name="CloseBtn" Content="X" Height="27" Width="26" Canvas.Left="388" Background="Transparent" Foreground="Beige" Click="CloseBtn_Click" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="ToPhoneNumberTB" TextWrapping="Wrap" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Bottom" FontSize="17" Foreground="Beige" Text="" Width="256" Height="34" TextChanged="ToPhoneNumberTB_TextChanged" PreviewTextInput="ToPhoneNumberTB_PreviewTextInput" HorizontalAlignment="Center" Canvas.Top="83" VerticalAlignment="Top" Canvas.Left="112"/>
+        <Rectangle Height="2" Canvas.Left="112" Stroke="DarkGray" Canvas.Top="117" Width="256" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ComboBox x:Name="MobilesServecesCB" Width="317" Canvas.Left="51" Canvas.Top="164" Foreground="Black" DropDownClosed="MobilesServecesCB_DropDownClosed" FontSize="17" HorizontalAlignment="Center" VerticalAlignment="Top" Height="29"/>
+        <Label Content="{x:Static Properties:Resources.number}" Style="{StaticResource Label_Style}" Canvas.Left="47" FontSize="18" Foreground="LightGray" Canvas.Top="48" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="61" />
+        <Label Content="{x:Static Properties:Resources.replenishmentonlytobelarusiannumbers}" Style="{StaticResource Label_Style}" Canvas.Left="51" FontSize="14" Foreground="LightGray" Canvas.Top="124" HorizontalAlignment="Center" VerticalAlignment="Top" Width="317" Height="28" />
+        <Label Content="{x:Static Properties:Resources.sum}" Style="{StaticResource Label_Style}" Canvas.Left="51" FontSize="14" Foreground="LightGray" Canvas.Top="200" Width="317" HorizontalAlignment="Center" VerticalAlignment="Top" Height="28" />
+        <TextBox x:Name="MoneyToSendTB" TextWrapping="Wrap" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Bottom" FontSize="17" Foreground="Beige" Text="" Width="257" Height="36" PreviewTextInput="MoneyToSendTB_PreviewTextInput" TextChanged="MoneyToSendTB_TextChanged" Canvas.Top="225" Canvas.Left="51" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Height="2" Canvas.Left="51" Stroke="DarkGray" Canvas.Top="261" Width="311" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="BYN" Style="{StaticResource Label_Style}" Canvas.Left="314" FontSize="20" Foreground="LightGray" Canvas.Top="225" Width="54" HorizontalAlignment="Center" VerticalAlignment="Top" Height="38" />
+        <Label Content="{x:Static Properties:Resources.commission}" Style="{StaticResource Label_Style}" Canvas.Left="51" FontSize="17" Foreground="LightGray" Canvas.Top="276" Width="97" HorizontalAlignment="Center" VerticalAlignment="Top" Height="32" />
+        <Label Content="{x:Static Properties:Resources.topayment}" Style="{StaticResource Label_Style}" Canvas.Left="51" FontSize="17" Foreground="LightGray" Canvas.Top="308" Width="97" HorizontalAlignment="Center" VerticalAlignment="Top" Height="32" />
+        <Label Content="BYN" Style="{StaticResource Label_Style}" Canvas.Left="314" FontSize="17" Canvas.Top="276" Width="54" HorizontalAlignment="Center" VerticalAlignment="Top" Height="32" />
+        <Label Content="BYN" Style="{StaticResource Label_Style}" Canvas.Left="314" FontSize="17" Canvas.Top="308" Width="54" HorizontalAlignment="Center" VerticalAlignment="Top" Height="32" />
+        <Label x:Name="commissionLable" Content="0" Style="{StaticResource Label_Style}" Canvas.Left="144" FontSize="17" HorizontalContentAlignment="Right" Foreground="LightGray" Canvas.Top="277" Width="170" HorizontalAlignment="Center" VerticalAlignment="Top" Height="32" />
+        <Label x:Name="toPayLable" Content="0" Style="{StaticResource Label_Style}" Canvas.Left="144" FontSize="17" HorizontalContentAlignment="Right" Foreground="LightGray" Canvas.Top="308" Width="170" HorizontalAlignment="Center" VerticalAlignment="Top" Height="32" />
+        <GroupBox Height="161" Width="351" VerticalContentAlignment="Bottom" Canvas.Top="372" BorderThickness="0" Canvas.Left="29" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0,0.5" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5D5A5A"/>
+                    <GradientStop Color="#FF484343" Offset="1"/>
+                    <GradientStop Color="#FF585050" Offset="0.489"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+        </GroupBox>
+        <TextBox x:Name="FromCardNumberTB" TextWrapping="Wrap" IsReadOnly="True" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Bottom" FontSize="19" Foreground="Beige" Text="" Width="301" Height="26" Canvas.Left="55" Canvas.Top="404" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Height="2" Canvas.Left="55" Stroke="DarkGray" Canvas.Top="432" Width="301" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="{x:Static Properties:Resources.fromcardlable}" Style="{StaticResource Label_Style}" Canvas.Left="29" FontSize="15" Canvas.Top="348" HorizontalAlignment="Left" VerticalAlignment="Center" Height="26" Width="60" />
+        <Label Content="{x:Static Properties:Resources.cardnumberlable}" Style="{StaticResource Label_Style}" Canvas.Left="55" FontSize="15" Canvas.Top="377" HorizontalAlignment="Center" VerticalAlignment="Top" Height="27" Width="93" />
+        <TextBox x:Name="FromCardExpirityDateMounthTB" IsReadOnly="True" TextWrapping="Wrap" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Bottom" FontSize="19" Foreground="Beige" Text="05" Width="27" Height="27"  Canvas.Left="55" Canvas.Top="474" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle Height="2" Canvas.Left="55" Stroke="DarkGray" Canvas.Top="504" Width="301" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="{x:Static Properties:Resources.expirydate}" Style="{StaticResource Label_Style}" Canvas.Left="55" FontSize="15" Canvas.Top="450" HorizontalAlignment="Center" VerticalAlignment="Top" Height="27" Width="103" />
+        <Label Content="{x:Static Properties:Resources.cvvcode}" Style="{StaticResource Label_Style}" Canvas.Left="253" FontSize="15" Canvas.Top="450" HorizontalAlignment="Left" VerticalAlignment="Center" Height="27" Width="107" />
+        <TextBox x:Name="FromCardCvvCodeTB" Text="***" TextWrapping="Wrap" Background="Transparent" BorderThickness="0" PreviewTextInput="FromCardCvvCodeTB_PreviewTextInput" VerticalContentAlignment="Bottom" FontSize="19" Foreground="Beige" Width="41" Height="27"  Canvas.Left="253" Canvas.Top="474" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="FromCardExpirityDateYearTB" IsReadOnly="True" TextWrapping="Wrap" Background="Transparent" BorderThickness="0" VerticalContentAlignment="Bottom" FontSize="19" Foreground="Beige" Text="28" Width="27" Height="27"  Canvas.Left="92" Canvas.Top="474" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="/" Style="{StaticResource Label_Style}" FontSize="20" FontWeight="Bold" Canvas.Left="78" Canvas.Top="474" HorizontalAlignment="Left" VerticalAlignment="Center" Height="40" Width="24" />
+        <Rectangle Height="2" Canvas.Left="55" Stroke="DarkGray" Canvas.Top="432" Width="301" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button x:Name="TopUpYourAccountBtn" Content="{x:Static Properties:Resources.topupyouraccount}" Style="{StaticResource BtnLocalization_Style}" FontSize="21" Canvas.Left="94" Canvas.Top="543" Click="TopUpYourAccountBtn_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="226" Height="39"/>
+
+    </Canvas>
+</Window>

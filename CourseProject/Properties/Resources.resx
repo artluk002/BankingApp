@@ -144,11 +144,32 @@
   <data name="code" xml:space="preserve">
     <value>Code:</value>
   </data>
+  <data name="commission" xml:space="preserve">
+    <value>Commission</value>
+  </data>
+  <data name="communalpayments" xml:space="preserve">
+    <value>Communal payments</value>
+  </data>
+  <data name="communalunderlable" xml:space="preserve">
+    <value>Payment of various utility services 
+from a card to a personal account. 
+Please make sure you enter your 
+account number correctly before 
+paying. in order to avoid 
+erroneous payment, because in 
+case of an erroneous payment 
+the bank will not be able to help 
+you with the cancellation 
+of the payment!</value>
+  </data>
   <data name="confirm" xml:space="preserve">
     <value>Confirm</value>
   </data>
   <data name="createbutton" xml:space="preserve">
     <value>Create</value>
+  </data>
+  <data name="credit" xml:space="preserve">
+    <value>Credit</value>
   </data>
   <data name="credittypecard" xml:space="preserve">
     <value>Credit</value>
@@ -192,6 +213,20 @@
   <data name="genderlable" xml:space="preserve">
     <value>Gender:</value>
   </data>
+  <data name="internetpayments" xml:space="preserve">
+    <value>Internet payments</value>
+  </data>
+  <data name="internetunderlable" xml:space="preserve">
+    <value>Payment for various internet
+services from a card to a personal 
+account. Please make sure before 
+paying entered the correct number
+accounts to avoid erroneous
+payment, as in the case
+the bank did not make an erroneous
+payment can help you cancel
+payment!</value>
+  </data>
   <data name="languages" xml:space="preserve">
     <value>Languages</value>
   </data>
@@ -222,6 +257,9 @@
   <data name="paymentsystemlable" xml:space="preserve">
     <value>Payment system:</value>
   </data>
+  <data name="personalaccount" xml:space="preserve">
+    <value>Personal account</value>
+  </data>
   <data name="personaldata" xml:space="preserve">
     <value>Personal data</value>
   </data>
@@ -230,6 +268,10 @@
   </data>
   <data name="phonelable" xml:space="preserve">
     <value>Phone:</value>
+  </data>
+  <data name="phoneunderlable" xml:space="preserve">
+    <value>Replenishment of Belarusian numbers only 
+(80 or +375)</value>
   </data>
   <data name="pincodelable" xml:space="preserve">
     <value>PIN-code</value>
@@ -246,8 +288,14 @@
   <data name="repitlable" xml:space="preserve">
     <value>Repit:</value>
   </data>
+  <data name="replenishmentonlytobelarusiannumbers" xml:space="preserve">
+    <value>Replenishment only to Belarusian numbers</value>
+  </data>
   <data name="russion" xml:space="preserve">
     <value>Russion</value>
+  </data>
+  <data name="services" xml:space="preserve">
+    <value>Services</value>
   </data>
   <data name="settings" xml:space="preserve">
     <value>Settings</value>
@@ -261,8 +309,18 @@
   <data name="surnamelable" xml:space="preserve">
     <value>Surname:</value>
   </data>
+  <data name="tocardunderlable" xml:space="preserve">
+    <value>Transfer to VISA or MasterCard 
+without commission!</value>
+  </data>
+  <data name="topayment" xml:space="preserve">
+    <value>To payment</value>
+  </data>
   <data name="topupmobile" xml:space="preserve">
     <value>Top up mobile</value>
+  </data>
+  <data name="topupyouraccount" xml:space="preserve">
+    <value>Top up your account</value>
   </data>
   <data name="transactiontype" xml:space="preserve">
     <value>Transaction type</value>

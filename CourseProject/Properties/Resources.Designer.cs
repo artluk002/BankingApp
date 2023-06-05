@@ -142,6 +142,42 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Commission.
+        /// </summary>
+        public static string commission {
+            get {
+                return ResourceManager.GetString("commission", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Communal payments.
+        /// </summary>
+        public static string communalpayments {
+            get {
+                return ResourceManager.GetString("communalpayments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Payment of various utility services 
+        ///from a card to a personal account. 
+        ///Please make sure you enter your 
+        ///account number correctly before 
+        ///paying. in order to avoid 
+        ///erroneous payment, because in 
+        ///case of an erroneous payment 
+        ///the bank will not be able to help 
+        ///you with the cancellation 
+        ///of the payment!.
+        /// </summary>
+        public static string communalunderlable {
+            get {
+                return ResourceManager.GetString("communalunderlable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Confirm.
         /// </summary>
         public static string confirm {
@@ -156,6 +192,15 @@ namespace CourseProject.Properties {
         public static string createbutton {
             get {
                 return ResourceManager.GetString("createbutton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Credit.
+        /// </summary>
+        public static string credit {
+            get {
+                return ResourceManager.GetString("credit", resourceCulture);
             }
         }
         
@@ -286,6 +331,32 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Internet payments.
+        /// </summary>
+        public static string internetpayments {
+            get {
+                return ResourceManager.GetString("internetpayments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Payment for various internet
+        ///services from a card to a personal 
+        ///account. Please make sure before 
+        ///paying entered the correct number
+        ///accounts to avoid erroneous
+        ///payment, as in the case
+        ///the bank did not make an erroneous
+        ///payment can help you cancel
+        ///payment!.
+        /// </summary>
+        public static string internetunderlable {
+            get {
+                return ResourceManager.GetString("internetunderlable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Languages.
         /// </summary>
         public static string languages {
@@ -376,6 +447,15 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Personal account.
+        /// </summary>
+        public static string personalaccount {
+            get {
+                return ResourceManager.GetString("personalaccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Personal data.
         /// </summary>
         public static string personaldata {
@@ -399,6 +479,16 @@ namespace CourseProject.Properties {
         public static string phonelable {
             get {
                 return ResourceManager.GetString("phonelable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Replenishment of Belarusian numbers only 
+        ///(80 or +375).
+        /// </summary>
+        public static string phoneunderlable {
+            get {
+                return ResourceManager.GetString("phoneunderlable", resourceCulture);
             }
         }
         
@@ -448,11 +538,29 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Replenishment only to Belarusian numbers.
+        /// </summary>
+        public static string replenishmentonlytobelarusiannumbers {
+            get {
+                return ResourceManager.GetString("replenishmentonlytobelarusiannumbers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Russion.
         /// </summary>
         public static string russion {
             get {
                 return ResourceManager.GetString("russion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Services.
+        /// </summary>
+        public static string services {
+            get {
+                return ResourceManager.GetString("services", resourceCulture);
             }
         }
         
@@ -493,11 +601,39 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Transfer to VISA or MasterCard 
+        ///without commission!.
+        /// </summary>
+        public static string tocardunderlable {
+            get {
+                return ResourceManager.GetString("tocardunderlable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на To payment.
+        /// </summary>
+        public static string topayment {
+            get {
+                return ResourceManager.GetString("topayment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Top up mobile.
         /// </summary>
         public static string topupmobile {
             get {
                 return ResourceManager.GetString("topupmobile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Top up your account.
+        /// </summary>
+        public static string topupyouraccount {
+            get {
+                return ResourceManager.GetString("topupyouraccount", resourceCulture);
             }
         }
         

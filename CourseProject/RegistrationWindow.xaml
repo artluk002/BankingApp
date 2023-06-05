@@ -26,17 +26,17 @@
         </Menu>
         <Label x:Name="RegistrationLable" Content="{x:Static language:Resources.registration}" Style="{StaticResource Label_Style}" FontSize="25" Canvas.Top="20" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Width="400" />
         <Canvas x:Name="RegirstrationCanvas">
-            <TextBox x:Name="LoginTextBox" Language="en-US" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="60" Width="250" Canvas.Left="123" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="LoginTextBox" Language="en-US" Style="{StaticResource TB_Style}" Text="" Canvas.Top="60" Width="250" Canvas.Left="123" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <PasswordBox x:Name="PasswordTextBox" Style="{StaticResource PB_Style}" Width="250" Height="24" FontSize="14" VerticalContentAlignment="Center" Canvas.Left="123" Canvas.Top="234" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Label x:Name="LoginLable" Content="{x:Static language:Resources.loginlable}" Style="{StaticResource Label_Style}" Canvas.Left="13" Canvas.Top="52" HorizontalAlignment="Left" VerticalAlignment="Center" Width="110" />
             <Label x:Name="PasswordLable" Content="{x:Static language:Resources.password}" Style="{StaticResource Label_Style}" Canvas.Left="13" Canvas.Top="226" HorizontalAlignment="Left" VerticalAlignment="Center" Width="110"/>
-            <TextBox x:Name="FirstNameTextBox" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="89" Width="250" Canvas.Left="123" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewTextInput="FirstNameTextBox_PreviewTextInput"/>
+            <TextBox x:Name="FirstNameTextBox" Style="{StaticResource TB_Style}" Text="" Canvas.Top="89" Width="250" Canvas.Left="123" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewTextInput="FirstNameTextBox_PreviewTextInput"/>
             <Label x:Name="NameLable" Content="{x:Static language:Resources.namelable}" Style="{StaticResource Label_Style}" Canvas.Left="13" Canvas.Top="81" HorizontalAlignment="Left" VerticalAlignment="Center" Width="110" />
-            <TextBox x:Name="SurNameTextBox" Language="en-US" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="118" Width="250" Canvas.Left="123" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewTextInput="SurNameTextBox_PreviewTextInput"/>
+            <TextBox x:Name="SurNameTextBox" Language="en-US" Style="{StaticResource TB_Style}" Text="" Canvas.Top="118" Width="250" Canvas.Left="123" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewTextInput="SurNameTextBox_PreviewTextInput"/>
             <Label x:Name="SurNameLable" Content="{x:Static language:Resources.surnamelable}" Style="{StaticResource Label_Style}" Canvas.Left="13" Canvas.Top="110" HorizontalAlignment="Left" VerticalAlignment="Center" Width="110" />
-            <TextBox x:Name="MailTextBox" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="176" Width="250" Canvas.Left="123" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="MailTextBox" Style="{StaticResource TB_Style}" Text="" Canvas.Top="176" Width="250" Canvas.Left="123" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Label x:Name="MailLable" Content="{x:Static language:Resources.maillable}" Style="{StaticResource Label_Style}" Canvas.Left="13" Canvas.Top="168" HorizontalAlignment="Left" VerticalAlignment="Center" Width="110" />
-            <TextBox x:Name="PhoneTextBox" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="204" Width="250" Canvas.Left="123" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="PhoneTextBox" Style="{StaticResource TB_Style}" Text="" Canvas.Top="204" Width="250" Canvas.Left="123" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Label x:Name="PhoneLable" Content="{x:Static language:Resources.phonelable}" Style="{StaticResource Label_Style}" Canvas.Left="13" Canvas.Top="196" HorizontalAlignment="Left" VerticalAlignment="Center" Width="110" />
             <Label x:Name="RepitPasswordLable" Content="{x:Static language:Resources.repitlable}" Style="{StaticResource Label_Style}" Canvas.Left="13" Canvas.Top="254" HorizontalAlignment="Left" VerticalAlignment="Center" Width="110"/>
             <PasswordBox x:Name="RepitPasswordTextBox" Style="{StaticResource PB_Style}" Width="250" Height="24" FontSize="14" VerticalContentAlignment="Center" Canvas.Left="123" Canvas.Top="262" HorizontalAlignment="Left" VerticalAlignment="Top"/>
@@ -46,7 +46,7 @@
             <Button x:Name="RegistrationBtn" Content="{x:Static language:Resources.registration}" Style="{StaticResource BtnRegistration_Style}" Canvas.Left="148" Canvas.Top="302" HorizontalAlignment="Left" VerticalAlignment="Top" Click="RegistrationBtn_Click"/>
         </Canvas>
         <Canvas x:Name="ConfirmCanvas" Visibility="Hidden">
-            <TextBox x:Name="AccessCodeTextBox" TextWrapping="Wrap" Style="{StaticResource TB_Style}" Text="" Canvas.Top="362" Width="250" Canvas.Left="78" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="AccessCodeTextBox" Style="{StaticResource TB_Style}" Text="" Canvas.Top="362" Width="250" Canvas.Left="78" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Button x:Name="ConfirmBtn" Content="Confirm" Style="{StaticResource BtnRegistration_Style}" Canvas.Left="148" Canvas.Top="402" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ConfirmBtn_Click"/>
         </Canvas>
     </Canvas>
