@@ -160,6 +160,15 @@ namespace CourseProject
 
                 cardsCB.ItemsSource = cards.DefaultView;
                 cardsCB.DisplayMemberPath = "number";
+                cardsCB.SelectedValuePath = "id";
+                if (DataStorage.card != null)
+                {
+                    cardsCB.SelectedValue = DataStorage.card.Id;
+                }
+                else
+                    cardsCB.SelectedIndex = 0;
+                selectBankCard();
+
             }
             catch (Exception ex)
             {
@@ -278,6 +287,22 @@ namespace CourseProject
             }
             InternetPaymentsWindow IPW = new InternetPaymentsWindow(this);
             IPW.ShowDialog();
+        }
+
+        private void CreditWindow_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataStorage.card == null)
+            {
+                MessageBox.Show("Select your card!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if(DataStorage.card.Type != "Credit")
+            {
+                MessageBox.Show("You cant take a loan only on a credit card!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            CreditWindow CW = new CreditWindow(this);
+            CW.ShowDialog();
         }
     }
 }

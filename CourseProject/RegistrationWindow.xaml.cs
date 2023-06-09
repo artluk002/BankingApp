@@ -36,7 +36,7 @@ namespace CourseProject
         private Regex passwordRegex = new Regex(@"^.{8,20}$");
         private Regex mailRegex = new Regex(@"^.+@.+\..+$");
         private RegistrationHelper RH;
-        private int num;
+        //private int num;
         private int Attempts;
         private DB db;
         public RegistrationWindow()

@@ -120,6 +120,9 @@
   <data name="add" xml:space="preserve">
     <value>Add</value>
   </data>
+  <data name="applyforaloan" xml:space="preserve">
+    <value>Apply for a loan</value>
+  </data>
   <data name="authorization" xml:space="preserve">
     <value>Authorization</value>
   </data>
@@ -174,6 +177,12 @@ of the payment!</value>
   <data name="credittypecard" xml:space="preserve">
     <value>Credit</value>
   </data>
+  <data name="creditunderlable" xml:space="preserve">
+    <value>Loan processing is possible 
+only on credit cards! Don't 
+delay your monthly payments 
+to avoid penalty fees.</value>
+  </data>
   <data name="currencylable" xml:space="preserve">
     <value>Currency:</value>
   </data>
@@ -185,6 +194,9 @@ of the payment!</value>
   </data>
   <data name="date" xml:space="preserve">
     <value>Date</value>
+  </data>
+  <data name="dateoftheloan" xml:space="preserve">
+    <value>Date of the loan</value>
   </data>
   <data name="debittypecard" xml:space="preserve">
     <value>Debit</value>
@@ -203,6 +215,9 @@ of the payment!</value>
   </data>
   <data name="female" xml:space="preserve">
     <value>Female</value>
+  </data>
+  <data name="fixedannualrate" xml:space="preserve">
+    <value>Fixed annual rate</value>
   </data>
   <data name="fromcardlable" xml:space="preserve">
     <value>From card</value>
@@ -242,17 +257,35 @@ payment!</value>
   <data name="male" xml:space="preserve">
     <value>Male</value>
   </data>
+  <data name="monthlypayment" xml:space="preserve">
+    <value>Monthly payment</value>
+  </data>
+  <data name="monthsnumber" xml:space="preserve">
+    <value>Number of months</value>
+  </data>
+  <data name="mycredit" xml:space="preserve">
+    <value>My credit</value>
+  </data>
   <data name="namelable" xml:space="preserve">
     <value>Name:</value>
   </data>
   <data name="newpassword" xml:space="preserve">
     <value>New password:</value>
   </data>
+  <data name="nextpayment" xml:space="preserve">
+    <value>Next payment</value>
+  </data>
   <data name="number" xml:space="preserve">
     <value>Number</value>
   </data>
+  <data name="paid" xml:space="preserve">
+    <value>Paid</value>
+  </data>
   <data name="password" xml:space="preserve">
     <value>Password:</value>
+  </data>
+  <data name="pay" xml:space="preserve">
+    <value>Pay</value>
   </data>
   <data name="paymentsystemlable" xml:space="preserve">
     <value>Payment system:</value>
