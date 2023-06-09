@@ -120,6 +120,9 @@
   <data name="add" xml:space="preserve">
     <value>Добавить</value>
   </data>
+  <data name="applyforaloan" xml:space="preserve">
+    <value>Оформить кредит</value>
+  </data>
   <data name="authorization" xml:space="preserve">
     <value>Вход</value>
   </data>
@@ -173,6 +176,13 @@
   <data name="credittypecard" xml:space="preserve">
     <value>Кредитная</value>
   </data>
+  <data name="creditunderlable" xml:space="preserve">
+    <value>Оформление кредита возможно 
+только на кредитные карты! Не 
+задерживайте ежемесячные 
+платежи во избежании наложения 
+пений на платёж.</value>
+  </data>
   <data name="currencylable" xml:space="preserve">
     <value>Валюта:</value>
   </data>
@@ -184,6 +194,9 @@
   </data>
   <data name="date" xml:space="preserve">
     <value>Дата</value>
+  </data>
+  <data name="dateoftheloan" xml:space="preserve">
+    <value>Дата кредита</value>
   </data>
   <data name="debittypecard" xml:space="preserve">
     <value>Дебитовая</value>
@@ -202,6 +215,9 @@
   </data>
   <data name="female" xml:space="preserve">
     <value>Женский</value>
+  </data>
+  <data name="fixedannualrate" xml:space="preserve">
+    <value>Фиксированная годовая ставка</value>
   </data>
   <data name="fromcardlable" xml:space="preserve">
     <value>С карты</value>
@@ -241,17 +257,35 @@
   <data name="male" xml:space="preserve">
     <value>Мужской</value>
   </data>
+  <data name="monthlypayment" xml:space="preserve">
+    <value>Ежемесячный платёж</value>
+  </data>
+  <data name="monthsnumber" xml:space="preserve">
+    <value>Количество месяцев</value>
+  </data>
+  <data name="mycredit" xml:space="preserve">
+    <value>Мой кредит</value>
+  </data>
   <data name="namelable" xml:space="preserve">
     <value>Имя:</value>
   </data>
   <data name="newpassword" xml:space="preserve">
     <value>Новый пароль:</value>
   </data>
+  <data name="nextpayment" xml:space="preserve">
+    <value>Следующая оплата</value>
+  </data>
   <data name="number" xml:space="preserve">
     <value>Номер</value>
   </data>
+  <data name="paid" xml:space="preserve">
+    <value>Оплачено</value>
+  </data>
   <data name="password" xml:space="preserve">
     <value>Пароль:</value>
+  </data>
+  <data name="pay" xml:space="preserve">
+    <value>Оплатить</value>
   </data>
   <data name="paymentsystemlable" xml:space="preserve">
     <value>Платёжная система:</value>

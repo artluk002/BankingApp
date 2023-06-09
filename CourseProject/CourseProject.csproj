@@ -122,6 +122,7 @@
     </Compile>
     <Compile Include="Classes\Card.cs" />
     <Compile Include="Classes\Client.cs" />
+    <Compile Include="Classes\Credit.cs" />
     <Compile Include="Classes\CurrencyUpdater.cs" />
     <Compile Include="Classes\DataStorage.cs" />
     <Compile Include="Classes\DB.cs" />
@@ -133,6 +134,9 @@
     </Compile>
     <Compile Include="CommunalPaymentsWindow.xaml.cs">
       <DependentUpon>CommunalPaymentsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreditWindow.xaml.cs">
+      <DependentUpon>CreditWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="GeneralWindow.xaml.cs">
       <DependentUpon>GeneralWindow.xaml</DependentUpon>
@@ -187,6 +191,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CommunalPaymentsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreditWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

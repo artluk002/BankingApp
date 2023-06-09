@@ -114,6 +114,10 @@
         </GroupBox>
         <Image Source="/Images/Credit.png" Height="30" Width="30" Canvas.Left="282" Canvas.Top="446" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Content="{x:Static language:Resources.credit}" Style="{StaticResource Label_Style}" Canvas.Left="312" FontSize="17" Canvas.Top="446" Height="30" Width="206" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button x:Name="CreditWindow" Content="&gt;" Canvas.Left="488" Canvas.Top="476" Background="Transparent" Foreground="Beige" FontSize="17" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="26" Height="27" BorderThickness="0" Click="CreditWindow_Click"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <ScrollViewer Background="Transparent" Height="62" Width="198" VerticalScrollBarVisibility="Auto" Canvas.Left="282" Canvas.Top="474" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="{x:Static language:Resources.creditunderlable}" Style="{StaticResource Label_Style}" Foreground="Silver" FontSize="12" Height="96" Width="190" />
+        </ScrollViewer>
     </Canvas>
 </Window>
     

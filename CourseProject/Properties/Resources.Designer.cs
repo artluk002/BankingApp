@@ -70,6 +70,15 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Apply for a loan.
+        /// </summary>
+        public static string applyforaloan {
+            get {
+                return ResourceManager.GetString("applyforaloan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Authorization.
         /// </summary>
         public static string authorization {
@@ -214,6 +223,18 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Loan processing is possible 
+        ///only on credit cards! Don&apos;t 
+        ///delay your monthly payments 
+        ///to avoid penalty fees..
+        /// </summary>
+        public static string creditunderlable {
+            get {
+                return ResourceManager.GetString("creditunderlable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Currency:.
         /// </summary>
         public static string currencylable {
@@ -246,6 +267,15 @@ namespace CourseProject.Properties {
         public static string date {
             get {
                 return ResourceManager.GetString("date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Date of the loan.
+        /// </summary>
+        public static string dateoftheloan {
+            get {
+                return ResourceManager.GetString("dateoftheloan", resourceCulture);
             }
         }
         
@@ -300,6 +330,15 @@ namespace CourseProject.Properties {
         public static string female {
             get {
                 return ResourceManager.GetString("female", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Fixed annual rate.
+        /// </summary>
+        public static string fixedannualrate {
+            get {
+                return ResourceManager.GetString("fixedannualrate", resourceCulture);
             }
         }
         
@@ -402,6 +441,33 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Monthly payment.
+        /// </summary>
+        public static string monthlypayment {
+            get {
+                return ResourceManager.GetString("monthlypayment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Number of months.
+        /// </summary>
+        public static string monthsnumber {
+            get {
+                return ResourceManager.GetString("monthsnumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на My credit.
+        /// </summary>
+        public static string mycredit {
+            get {
+                return ResourceManager.GetString("mycredit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Name:.
         /// </summary>
         public static string namelable {
@@ -420,6 +486,15 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Next payment.
+        /// </summary>
+        public static string nextpayment {
+            get {
+                return ResourceManager.GetString("nextpayment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Number.
         /// </summary>
         public static string number {
@@ -429,11 +504,29 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Paid.
+        /// </summary>
+        public static string paid {
+            get {
+                return ResourceManager.GetString("paid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Password:.
         /// </summary>
         public static string password {
             get {
                 return ResourceManager.GetString("password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pay.
+        /// </summary>
+        public static string pay {
+            get {
+                return ResourceManager.GetString("pay", resourceCulture);
             }
         }
         

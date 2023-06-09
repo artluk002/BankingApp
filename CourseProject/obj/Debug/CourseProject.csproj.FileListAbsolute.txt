@@ -80,3 +80,5 @@ C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\CommunalPaymentsWindow.g.
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\CommunalPaymentsWindow.baml
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\InternetPaymentsWindow.g.cs
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\InternetPaymentsWindow.baml
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\CreditWindow.g.cs
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\CreditWindow.baml
