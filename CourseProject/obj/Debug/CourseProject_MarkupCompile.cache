@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\ОАиП\labs\CourseProject\CourseProject\App.xaml
-18941344817
+19913718420
 
-31-414483598
+32924602403
 33938061545
-AccessWindow.xaml;ChangeMailWindow.xaml;ChangePassword.xaml;ChangePhoneWindow.xaml;ClientWindow.xaml;CommunalPaymentsWindow.xaml;CreditWindow.xaml;GeneralWindow.xaml;InternetPaymentsWindow.xaml;MainWindow.xaml;NewCardRegistration.xaml;RecoveryWindow.xaml;RegistrationWindow.xaml;Resources\styles.xaml;TopUpMobileWindow.xaml;TransactionDescriptionWindow.xaml;TransactionsHistoryWindow.xaml;TransferToCardWindow.xaml;
+AccessWindow.xaml;ChangeMailWindow.xaml;ChangePassword.xaml;ChangePhoneWindow.xaml;ClientWindow.xaml;CommunalPaymentsWindow.xaml;CreditWindow.xaml;GeneralWindow.xaml;InternetPaymentsWindow.xaml;MainWindow.xaml;NewCardRegistration.xaml;PersonalAccountWindow.xaml;RecoveryWindow.xaml;RegistrationWindow.xaml;Resources\styles.xaml;TopUpMobileWindow.xaml;TransactionDescriptionWindow.xaml;TransactionsHistoryWindow.xaml;TransferToCardWindow.xaml;
 
 False
 

@@ -119,6 +119,10 @@ namespace CourseProject
                 VisaBackground.Visibility = Visibility.Visible;
                 MasterCardBackground.Visibility = Visibility.Hidden;
             }
+            if (DataStorage.card.Type == "Credit")
+                CardTypeLable.Content = Properties.Resources.credittypecard;
+            else
+                CardTypeLable.Content = Properties.Resources.debittypecard;
             lable_card_number.Content = $"{DataStorage.card.Number.Substring(0,4)} {DataStorage.card.Number.Substring(4, 4)} {DataStorage.card.Number.Substring(8, 4)} {DataStorage.card.Number.Substring(12, 4)}";
             lable_card_name_surname.Content = $"{DataStorage.client.Name.ToUpper()} {DataStorage.client.Surname.ToUpper()}";
             lable_card_date.Content = $"{DataStorage.card.Card_Date.ToString("MM")}/{DataStorage.card.Card_Date.ToString("yy")}";
@@ -129,6 +133,7 @@ namespace CourseProject
             lable_expirity_date.Visibility = Visibility.Visible;
             lable_balance.Visibility = Visibility.Visible;
             lable_currency_code.Visibility = Visibility.Visible;
+            CardTypeLable.Visibility = Visibility.Visible;
         }
 
         private void cardsCB_DropDownClosed(object sender, EventArgs e)
@@ -303,6 +308,17 @@ namespace CourseProject
             }
             CreditWindow CW = new CreditWindow(this);
             CW.ShowDialog();
+        }
+
+        private void PersonalAccountWindow_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataStorage.card == null)
+            {
+                MessageBox.Show("Select your card!", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            PersonalAccountWindow PAW = new PersonalAccountWindow(this);
+            PAW.ShowDialog();
         }
     }
 }

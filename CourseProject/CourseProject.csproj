@@ -147,6 +147,9 @@
     <Compile Include="NewCardRegistration.xaml.cs">
       <DependentUpon>NewCardRegistration.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PersonalAccountWindow.xaml.cs">
+      <DependentUpon>PersonalAccountWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.ru.Designer.cs">
       <DependentUpon>Resources.ru.resx</DependentUpon>
       <DesignTime>True</DesignTime>
@@ -219,6 +222,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="NewCardRegistration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PersonalAccountWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -313,6 +320,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Credit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PersonalAccount.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

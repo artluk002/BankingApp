@@ -82,3 +82,5 @@ C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\InternetPaymentsWindow.g.
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\InternetPaymentsWindow.baml
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\CreditWindow.g.cs
 C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\CreditWindow.baml
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\PersonalAccountWindow.g.cs
+C:\ОАиП\labs\CourseProject\CourseProject\obj\Debug\PersonalAccountWindow.baml

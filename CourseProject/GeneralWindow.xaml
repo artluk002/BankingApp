@@ -53,7 +53,7 @@
         </GroupBox>
         <Image Source="\Images\FromCardToCard.png" Height="30" Width="46" Canvas.Left="26" Canvas.Top="338" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Rectangle Height="2" Canvas.Left="26" Stroke="DarkGray" Canvas.Top="395" Width="194" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="{x:Static language:Resources.transfertothecard}" Style="{StaticResource Label_Style}" Canvas.Left="72" Canvas.Top="337" FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Label Content="{x:Static language:Resources.transfertothecard}" HorizontalContentAlignment="Center" Style="{StaticResource Label_Style}" Canvas.Left="21" Canvas.Top="337" FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Center" Width="235" />
         <Button x:Name="TransferToCard" Content=">" Canvas.Left="225" Canvas.Top="366" Background="Transparent" Foreground="Beige" FontSize="17" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="25" Height="27" HorizontalAlignment="Center" VerticalAlignment="Top" BorderThickness="0" Click="TransferToCard_Click"/>
         <Label x:Name="lable_currency_code" Visibility="Hidden" Content="USD" Style="{StaticResource Label_Style}" Canvas.Left="220" Canvas.Top="224" HorizontalAlignment="Center" VerticalAlignment="Top" />
         <Label x:Name="lable_balance" Visibility="Hidden" Content="0,0" Style="{StaticResource Label_Style}" Canvas.Left="273" Canvas.Top="224" HorizontalAlignment="Center" VerticalAlignment="Top"/>
@@ -77,11 +77,11 @@
             </GroupBox.Background>
         </GroupBox>
         <Rectangle Height="2" Canvas.Left="288" Stroke="DarkGray" Canvas.Top="395" Width="194" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Image Source="/Images/Phone.png" Height="30" Width="30" Canvas.Left="285" Canvas.Top="338" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Label Content="{x:Static language:Resources.topupmobile}" Style="{StaticResource Label_Style}" Canvas.Left="315" Canvas.Top="338" FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Image Source="/Images/Phone.png" Height="30" Width="30" Canvas.Left="282" Canvas.Top="337" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="{x:Static language:Resources.topupmobile}" HorizontalContentAlignment="Center" Style="{StaticResource Label_Style}" Canvas.Left="288" Canvas.Top="338" FontSize="17" HorizontalAlignment="Left" VerticalAlignment="Center" Width="230" />
         <Button x:Name="TransferToPhone" Content="&gt;" Canvas.Left="488" Canvas.Top="366" Background="Transparent" Foreground="Beige" FontSize="17" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="25" Height="27" BorderThickness="0" Click="TransferToPhone_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <Image Source="/Images/ComPaym.png" Height="30" Width="30" Canvas.Left="544" Canvas.Top="337" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Label Content="{x:Static language:Resources.communalpayments}" Style="{StaticResource Label_Style}" Canvas.Left="574" FontSize="17" Canvas.Top="337" Height="30" Width="205" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Label Content="{x:Static language:Resources.communalpayments}" HorizontalContentAlignment="Center" Style="{StaticResource Label_Style}" Canvas.Left="542" FontSize="17" Canvas.Top="337" Height="30" Width="237" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Label Content="{x:Static language:Resources.phoneunderlable}" Style="{StaticResource Label_Style}" Foreground="Silver" Canvas.Left="285" Canvas.Top="395" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Label Content="{x:Static language:Resources.tocardunderlable}" Style="{StaticResource Label_Style}" Foreground="Silver" Canvas.Left="23" Canvas.Top="397" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Button x:Name="CommunalPaymentsBtn" Content="&gt;" Canvas.Left="746" Canvas.Top="366" Background="Transparent" Foreground="Beige" FontSize="17" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="26" Height="27" BorderThickness="0" Click="CommunalPaymentsBtn_Click"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -98,7 +98,7 @@
             </GroupBox.Background>
         </GroupBox>
         <Image Source="/Images/InternetPayments.png" Height="30" Width="30" Canvas.Left="22" Canvas.Top="447" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Label Content="{x:Static language:Resources.internetpayments}" Style="{StaticResource Label_Style}" Canvas.Left="52" FontSize="17" Canvas.Top="447" Height="30" Width="206" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Label Content="{x:Static language:Resources.internetpayments}" HorizontalContentAlignment="Center" Style="{StaticResource Label_Style}" Canvas.Left="20" FontSize="17" Canvas.Top="447" Height="30" Width="234" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Button x:Name="InternetPaymentsBtn_Copy" Content="&gt;" Canvas.Left="224" Canvas.Top="476" Background="Transparent" Foreground="Beige" FontSize="17" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="26" Height="27" BorderThickness="0" Click="InternetPaymentsBtn_Copy_Click"  HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <ScrollViewer Background="Transparent" Height="62" Width="198" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="21" Canvas.Top="474">
             <Label Content="{x:Static language:Resources.communalunderlable}" Style="{StaticResource Label_Style}" Foreground="Silver" FontSize="12" Height="150" Width="190" />
@@ -113,11 +113,24 @@
             </GroupBox.Background>
         </GroupBox>
         <Image Source="/Images/Credit.png" Height="30" Width="30" Canvas.Left="282" Canvas.Top="446" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Content="{x:Static language:Resources.credit}" Style="{StaticResource Label_Style}" Canvas.Left="312" FontSize="17" Canvas.Top="446" Height="30" Width="206" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Label Content="{x:Static language:Resources.credit}" HorizontalContentAlignment="Center" Style="{StaticResource Label_Style}" Canvas.Left="282" FontSize="17" Canvas.Top="446" Height="30" Width="236" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Button x:Name="CreditWindow" Content="&gt;" Canvas.Left="488" Canvas.Top="476" Background="Transparent" Foreground="Beige" FontSize="17" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="26" Height="27" BorderThickness="0" Click="CreditWindow_Click"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <ScrollViewer Background="Transparent" Height="62" Width="198" VerticalScrollBarVisibility="Auto" Canvas.Left="282" Canvas.Top="474" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="{x:Static language:Resources.creditunderlable}" Style="{StaticResource Label_Style}" Foreground="Silver" FontSize="12" Height="96" Width="190" />
         </ScrollViewer>
+        <Label x:Name="CardTypeLable" Content="{x:Static language:Resources.debittypecard}" Visibility="Hidden"   Style="{StaticResource Label_Style}" HorizontalContentAlignment="Right" Canvas.Left="488" Canvas.Top="52" HorizontalAlignment="Left" VerticalAlignment="Center" Width="99" />
+        <GroupBox Height="97" Width="236" VerticalContentAlignment="Bottom" Canvas.Left="542" Canvas.Top="445" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0.5,0" StartPoint="0,0.5">
+                    <GradientStop Color="#FF5D5A5A"/>
+                    <GradientStop Color="#FF484343" Offset="1"/>
+                    <GradientStop Color="#FF585050" Offset="0.489"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+        </GroupBox>
+        <Image Source="/Images/PersonalAccount.png" Height="30" Width="30" Canvas.Left="542" Canvas.Top="446" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="{x:Static language:Resources.personalaccount}" HorizontalContentAlignment="Center" Style="{StaticResource Label_Style}" Canvas.Left="544" FontSize="17" Canvas.Top="446" Height="30" Width="234" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Button x:Name="PersonalAccountWindow" Content="&gt;" Canvas.Left="746" Canvas.Top="476" Background="Transparent" Foreground="Beige" FontSize="17" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="26" Height="27" BorderThickness="0" Click="PersonalAccountWindow_Click"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </Window>
     
