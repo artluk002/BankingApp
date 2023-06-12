@@ -255,8 +255,21 @@ namespace CourseProject
                 MessageBox.Show("You don't have enough money to pay off the loan", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
+            DateTime checkDate = credit.Repayment_date;
             DateTime nextPaymentDate = credit.Repayment_date.AddMonths(1);
             double credit_summ = credit.Credit_sum + credit.Repayment_sum;
+
+            double repayment_sum = credit.Repayment_sum;
+
+            if(checkDate.Date < DateTime.Now.Date)
+            {
+                while(checkDate != DateTime.Now.Date)
+                {
+                    repayment_sum /= 1.01;
+                    checkDate = checkDate.AddDays(1);
+                }
+            }
+
 
             string transaction_number = "p";
 
@@ -291,9 +304,10 @@ namespace CourseProject
                 }
                 else
                 {
-                    command1 = new MySqlCommand("UPDATE `credit` SET `credit_sum` = @cs, `repayment_date` = @rd WHERE id = @i;", db.getConnection());
+                    command1 = new MySqlCommand("UPDATE `credit` SET `credit_sum` = @cs, `repayment_date` = @rd, `repayment_sum` = @rs WHERE id = @i;", db.getConnection());
                     command1.Parameters.Add("@cs", MySqlDbType.Double).Value = credit_summ;
                     command1.Parameters.Add("@rd", MySqlDbType.DateTime).Value = nextPaymentDate;
+                    command1.Parameters.Add("@rs", MySqlDbType.Double).Value = repayment_sum;
                     command1.Parameters.Add("@i", MySqlDbType.Int32).Value = credit.Id;
                 }
 

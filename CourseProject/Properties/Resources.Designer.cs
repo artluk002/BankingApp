@@ -61,6 +61,15 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Actions.
+        /// </summary>
+        public static string actions {
+            get {
+                return ResourceManager.GetString("actions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Add.
         /// </summary>
         public static string add {
@@ -84,6 +93,15 @@ namespace CourseProject.Properties {
         public static string authorization {
             get {
                 return ResourceManager.GetString("authorization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Balance.
+        /// </summary>
+        public static string balance {
+            get {
+                return ResourceManager.GetString("balance", resourceCulture);
             }
         }
         
@@ -370,6 +388,15 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Information.
+        /// </summary>
+        public static string information {
+            get {
+                return ResourceManager.GetString("information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Internet payments.
         /// </summary>
         public static string internetpayments {
@@ -545,6 +572,15 @@ namespace CourseProject.Properties {
         public static string personalaccount {
             get {
                 return ResourceManager.GetString("personalaccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Personal account number.
+        /// </summary>
+        public static string personalaccountnumber {
+            get {
+                return ResourceManager.GetString("personalaccountnumber", resourceCulture);
             }
         }
         
@@ -740,11 +776,47 @@ namespace CourseProject.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Transfer amount.
+        /// </summary>
+        public static string transferamount {
+            get {
+                return ResourceManager.GetString("transferamount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Transfer.
         /// </summary>
         public static string transferbutton {
             get {
                 return ResourceManager.GetString("transferbutton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Transfer from account to account.
+        /// </summary>
+        public static string transferfromaccounttoaccount {
+            get {
+                return ResourceManager.GetString("transferfromaccounttoaccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Transfer from account to card.
+        /// </summary>
+        public static string transferfromaccounttocard {
+            get {
+                return ResourceManager.GetString("transferfromaccounttocard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Transfer from card to account.
+        /// </summary>
+        public static string transferfromcardtoaccount {
+            get {
+                return ResourceManager.GetString("transferfromcardtoaccount", resourceCulture);
             }
         }
         

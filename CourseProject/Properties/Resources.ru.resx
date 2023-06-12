@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="actions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
   <data name="add" xml:space="preserve">
     <value>Добавить</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="authorization" xml:space="preserve">
     <value>Вход</value>
+  </data>
+  <data name="balance" xml:space="preserve">
+    <value>Баланс</value>
   </data>
   <data name="cardnumberlable" xml:space="preserve">
     <value>Номер карты:</value>
@@ -228,6 +234,9 @@
   <data name="genderlable" xml:space="preserve">
     <value>Пол:</value>
   </data>
+  <data name="information" xml:space="preserve">
+    <value>Информация</value>
+  </data>
   <data name="internetpayments" xml:space="preserve">
     <value>Интернет платежи</value>
   </data>
@@ -292,6 +301,9 @@
   </data>
   <data name="personalaccount" xml:space="preserve">
     <value>Личный счёт</value>
+  </data>
+  <data name="personalaccountnumber" xml:space="preserve">
+    <value>Номер личного счёта</value>
   </data>
   <data name="personaldata" xml:space="preserve">
     <value>Личные данные</value>
@@ -358,8 +370,20 @@
   <data name="transactiontype" xml:space="preserve">
     <value>Тип транзакции</value>
   </data>
+  <data name="transferamount" xml:space="preserve">
+    <value>Сумма перевода</value>
+  </data>
   <data name="transferbutton" xml:space="preserve">
     <value>Перевести</value>
+  </data>
+  <data name="transferfromaccounttoaccount" xml:space="preserve">
+    <value>Перевод со счёта на счёт</value>
+  </data>
+  <data name="transferfromaccounttocard" xml:space="preserve">
+    <value>Перевод со счёта на карту</value>
+  </data>
+  <data name="transferfromcardtoaccount" xml:space="preserve">
+    <value>Перевод с карты на счёт</value>
   </data>
   <data name="transfertothecard" xml:space="preserve">
     <value>Перевод на карту</value>
